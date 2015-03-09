@@ -15,6 +15,7 @@
    * 添加jar包
    * 修改web.xml
    * 创建MainModule
+   * 配置IocBy
 * 第一个功能Module类
 * 完成登陆界面
 * 文件上传
