@@ -27,6 +27,7 @@
 * 第一个功能Module类
    * 建几个Pojo
    * 建Module类
+   * 配置Module类的Ioc信息
 * 完成登陆界面
 * 文件上传
 
