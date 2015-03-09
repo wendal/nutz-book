@@ -24,6 +24,7 @@
    * 配置Views
    * 启动项目
    * 分析一下打印的log信息
+   * 添加一个首页
 * 第一个功能Module类
    * 建几个Pojo
    * 建Module类
