@@ -13,7 +13,7 @@
    * [基础知识](chapter2.1.md)
        * [Java基础](chapter2.1.1.md)
 	   * [Java EE基础](chapter2.1.2.md)
-	   * [Nutz的基本概念]
+	   * [Nutz的基本概念](chapter2.1.3.md)
    * [工具选用](chapter2.2.md)
    * [让Eclipse工作在UTF8环境](chapter2.3.md)
    * [准备必要的jar包](chapter2.4.md)
