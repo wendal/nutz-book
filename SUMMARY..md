@@ -5,7 +5,7 @@
    * [这本书怎么用](chapter0.2.md)
    * [如何反馈](chapter0.3.md)
    * [术语表](chapter0.4.md)
-* 环境准备
+* [环境准备](chapter1.md)
    * 基础知识
    * 工具选用
    * 让Eclipse工作在UTF8环境
