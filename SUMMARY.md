@@ -1,5 +1,6 @@
-# 大纲
+# Summary
 
+* [Introduction](README.md)
 * [前言](chapter0.md)
    * [为什么写这本书](chapter0.1.md)
    * [这本书怎么用](chapter0.2.md)
@@ -7,6 +8,7 @@
    * [术语表](chapter0.4.md)
 * [环境准备](chapter1.md)
    * [基础知识](chapter1.1.md)
+       * Java基础
    * 工具选用
    * 让Eclipse工作在UTF8环境
    * 准备必要的jar包
