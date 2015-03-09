@@ -13,6 +13,7 @@
 * 搭个架子
    * 新建web项目
    * 添加jar包
+   * 添加一个首页
    * 修改web.xml
    * 创建MainModule
    * 配置IocBy
@@ -22,7 +23,6 @@
    * 配置默认Ok和Fail
    * 配置Localization
    * 配置Views
-   * 添加一个首页
    * 启动项目
    * 分析一下打印的log信息
 * 第一个功能Module类
