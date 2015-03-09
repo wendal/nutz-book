@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](README.md)
 * [前言](chapter0.md)
    * [为什么写这本书](chapter1.1.md)
    * [这本书怎么用](chapter1.2.md)
