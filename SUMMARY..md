@@ -18,6 +18,7 @@
    * 配置IocBy
    * 配置Modules
    * 配置Localization
+   * 配置Views
 * 第一个功能Module类
 * 完成登陆界面
 * 文件上传
