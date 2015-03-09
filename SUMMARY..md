@@ -16,9 +16,9 @@
    * 修改web.xml
    * 创建MainModule
    * 配置IocBy
+   * 配置dao.js
    * 配置Modules
    * 配置Setup
-   * 配置dao.js
    * 配置Localization
    * 配置Views
    * 配置默认Ok和Fail
