@@ -6,7 +6,7 @@
    * [如何反馈](chapter0.3.md)
    * [术语表](chapter0.4.md)
 * [环境准备](chapter1.md)
-   * 基础知识
+   * [基础知识](chapter1.1.md)
    * 工具选用
    * 让Eclipse工作在UTF8环境
    * 准备必要的jar包
