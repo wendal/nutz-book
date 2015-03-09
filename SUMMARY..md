@@ -18,12 +18,12 @@
    * 配置IocBy
    * 配置Modules
    * 配置Setup
+   * 配置dao.js
    * 配置Localization
    * 配置Views
    * 配置默认Ok和Fail
    * 启动项目
    * 分析一下打印的log信息
-   * 配置dao.js
 * 第一个功能Module类
 * 完成登陆界面
 * 文件上传
