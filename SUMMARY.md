@@ -12,6 +12,7 @@
 * [基本准备](prepare/prepares.md)
 	* [选用工具](prepare/tools.md)
 	* [让Eclipse工作在UTF8环境](prepare/eclipse_utf8.md)
+	* [配置Server](prepare/server.md)
 	* [下载jar包](prepare/jars.md)
 	* [数据库准备](prepare/prepare_db.md)
 * [30分钟把项目跑起来](setup30mins/setup30mins.md)

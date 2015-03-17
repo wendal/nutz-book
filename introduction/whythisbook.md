@@ -11,3 +11,5 @@
 * [社区常见问答 Part 1](http://nutzam.com/core/faq/common_qa_1.html)
 
 所以,我尝试用这种引导式的指南,让大家*正确*使用nutz,按nutz的思路来使用nutz
+
+这本书正在紧张编著中,内容随时更新
