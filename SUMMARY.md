@@ -1,105 +1,89 @@
-# Summary
+# 大纲
 
 这是一本好玩的nutz书
 
 * [简介](README.md)
-* [前言](chapter1.md)
-   * [为什么写这本书](chapter1.1.md)
-   * [这本书怎么用](chapter1.2.md)
-   * [如何反馈](chapter1.3.md)
-   * [术语表](chapter1.4.md)
-   * [提问的智慧](chapter1.5.md)
-* [环境准备](chapter2.md)
-   * [基础知识](chapter2.1.md)
-       * [Java基础](chapter2.1.1.md)
-	   * [Java EE基础](chapter2.1.2.md)
-	   * [Nutz的基本概念](chapter2.1.3.md)
-   * [工具选用](chapter2.2.md)
-   * [让Eclipse工作在UTF8环境](chapter2.3.md)
-   * [准备必要的jar包](chapter2.4.md)
-* 搭个架子
-   * 什么是架子
-   * 新建web项目
-   * 添加jar包
-   * 添加log4j配置
-   * 添加一个首页
-   * 修改web.xml
-   * 配置druid监控页面
-   * 创建MainModule
-   * 配置IocBy
-       * json加载器
-	   * 注解加载器
-   * 配置dao.js
-       * 数据源配置
-	   * NutDao配置
-   * 配置Modules
-       * 枚举模块类
-	   * 包扫描
-   * 配置Setup
-       * init方法
-	   * depose方法
-   * 配置默认Ok和Fail
-       * 基本语法
-	   * 扩展语法简介
-   * 配置Localization
-       * 目录与语言
-	   * 默认语言
-   * 配置Views
-       * 自定义View的说明
-   * 配置Aop
-       * 基于注解的Aop
-	   * 基于声明的Aop
-   * 启动项目
-   * 分析一下打印的log信息
-       * nutz的日志分类
-       * 日志系统的Log
-	   * 资源扫描系统的Log
-	   * 容器重要信息的Log
-	   * Ioc初始化的Log
-	   * URL映射关系的Log
-	   * 其他小Log
-	* 可能遇到的问题
-	   * 无日志输出
-	   * 数据库连接失败
-	   * ClassNotFound
-* 用户登陆登出
-   * 建几个Pojo
-   * 建Module类
-   * 配置Module类的Ioc信息
-   * 创建默认用户
-   * 实现登陆方法
-   * 实现登陆页面
-   * 实现登出方法
-   * 运行起来看看
-   * 添加验证码
-      * 添加相关的jar
-	  * 修改登录方法
-	  * 修改页面
-	  * 测试一下效果
-* 文件上传
-   * 添加上传页面
-   * 新建一个UploadModule
-   * 配置Ioc信息
-   * 实现上传方法
-* 文件下载
-   * 添加下载索引页
-   * 实现下载方法
-* 基本的权限系统
-   * 添加shiro
-       * 添加jar包
-	   * 修改web.xml
-	   * 添加shiro.ini
-	* 添加nutz-shiro集成
-	   * 声明新的动作链
-	   * 建立realm关联
-	   * 登陆方法改造
-	* 添加页面
-		* 用户管理页面
-		* 组管理页面
-		* 权限管理页面
-	* 添加权限方法
-		* 用户相关的方法
-		* 组相关的方法
-		* 权限相关的方法
-
+* [前言](introduction/introduction.md)
+	* [为什么写这本书](introduction/whythisbook.md)
+	* [这本书怎么用](introduction/howtouse.md)
+	* [如何反馈](introduction/howtofeedback.md)
+	* [术语表](introduction/worddict.md)
+	* [提问的智慧](introduction/askforhelp.md)
+* [基本准备](prepare/prepares.md)
+	* [选用工具](prepare/tools.md)
+	* [让Eclipse工作在UTF8环境](prepare/eclipse_utf8.md)
+	* [下载jar包](prepare/jars.md)
+	* [数据库准备](prepare/prepare_db.md)
+* [30分钟把项目跑起来](setup30mins/setup30mins.md)
+	* [新建web项目](setup30mins/new_project.md)
+	* [添加jar包](setup30mins/add_jar.md)
+	* [添加MainModule](setup30mins/add_mainmodule.md)
+	* [配置web.xml](setup30mins/configure_webxml.md)
+	* [添加dao.json文件](setup30mins/add_daojson.md)
+	* [配置IocBy](setup30mins/configure_iocby.md)
+	* [新增Pojo](setup30mins/add_pojos.md)
+	* [配置SetupBy](setup30mins/setupby.md)
+	* [初始化数据](setup30mins/init_datas.md)
+	* [第一个模块类UserModule](setup30mins/add_usermodule.md)
+	* [登陆方法](setup30mins/add_login_method.md)
+	* [登出方法](setup30mins/add_logout_method.md)
+	* [登陆登出的JSP页面](setup30mins/login_logout_jsp.md)
+	* [运行起来](setup30mins/runit.md)
+* [增删改查都要有](do_curd/do_curd.md)
+	* [add方法](do_curd/do_add.md)
+	* [query方法](do_curd/do_query.md)
+	* [update方法](do_curd/do_update.md)
+	* [delete方法](do_curd/do_delete.md)
+	* [列表页](do_curd/list_jsp.md)
+	* [新增用户页](do_curd/add_user_jsp.md)
+* [完善一下基本配置](more_configure/more_configure.md)
+	* [关联源码](more_configure/source_code.md)
+	* [添加log4j配置](more_configure/log4j.md)
+	* [默认@Ok](more_configure/ok.md)
+	* [默认@Fail](more_configure/fail.md)
+	* [配置Localization](more_configure/localization.md)
+	* [配置动作链](more_configure/action_chain.md)
+* [日志系统的Log](logsystem/logsystem.md)
+	* [nutz的日志分类](logsystem/log_category.md)
+	* [资源扫描系统的Log](logsystem/log_scans.md)
+	* [容器重要信息的Log](logsystem/log_container.md)
+	* [Ioc初始化的Log](logsystem/log_ioc.md)
+	* [URL映射关系的Log](logsystem/log_urlmapping.md)
+	* [其他小Log](logsystem/log_others.md)
+* [文件上传](file_upload/file_upload.md)
+	* [添加上传页面](file_upload/upload_page.md)
+	* [新建一个UploadModule](file_upload/upload_module.md)
+	* [配置Ioc信息](file_upload/upload_ioc.md)
+	* [实现上传方法](file_upload/upload_method.md)
+* [文件下载](file_download/file_download.md)
+	* [添加下载索引页](file_download/download_list_jsp.md)
+	* [实现下载方法](file_download/download.md)
+	* [实现下载cvs文件的方法](file_download/download.md)
+* [页面流转](page_route/page_route.md)
+	* [跳转到Jsp](page_route/page_to_jsp.md)
+	* [响应Ajax请求](page_route/resp_ajax.md)
+	* [重定向页面](page_route/page_302_301.md)
+* [Dao的常用操作](dao_operate/dao_operate.md)
+	* [主键配置](dao_operate/oks.md)
+	* [单记录查询](dao_operate/fetch.md)
+	* [条件查询](dao_operate/query.md)
+	* [普通插入](dao_operate/insert.md)
+	* [批量插入](dao_operate/fastinsert.md)
+	* [单记录更新](dao_operate/update_one.md)
+	* [条件更新](dao_operate/update_many.md)
+	* [单条删除](dao_operate/delete.md)
+	* [批量删除](dao_operate/clear.md)
+* [Dao的关联操作](dao_links/dao_operate.md)
+	* [一对一的配置](dao_links/dao_one2one_configure.md)
+	* [一对一的插入](dao_links/dao_one2one_insert.md)
+	* [一对一的查询](dao_links/dao_one2one_query.md)
+	* [一对一的更新](dao_links/dao_one2one_update.md)
+	* [一对一的删除](dao_links/dao_one2one_delete.md)
+	* [一对多的操作](dao_links/dao_one2many.md)
+	* [多对多的配置](dao_links/dao_many2many_configure.md)
+	* [多对多的插入](dao_links/dao_many2many_insert.md)
+	* [多对多的查询](dao_links/dao_many2many_query.md)
+	* [多对多的更新](dao_links/dao_many2many_update.md)
+	* [多对多的删除](dao_links/dao_many2many_delete.md)
+	* [小测试](dao_links/dao_test.md)
 
