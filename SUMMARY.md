@@ -22,7 +22,7 @@
 	* [添加MainModule](setup30mins/add_mainmodule.md)
 	* [配置web.xml](setup30mins/configure_webxml.md)
 	* [启动一下这个空项目](setup30mins/start_emtry_webapp.md)
-	* [添加dao.json文件](setup30mins/add_daojson.md)
+	* [添加dao.js文件](setup30mins/add_daojson.md)
 	* [配置IocBy](setup30mins/configure_iocby.md)
 	* [新增Pojo](setup30mins/add_pojos.md)
 	* [配置SetupBy](setup30mins/setupby.md)
