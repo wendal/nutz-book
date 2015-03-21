@@ -7,7 +7,6 @@
 	* [为什么写这本书](introduction/whythisbook.md)
 	* [这本书怎么用](introduction/howtouse.md)
 	* [如何反馈](introduction/howtofeedback.md)
-	* [术语表](introduction/worddict.md)
 	* [提问的智慧](introduction/askforhelp.md)
 * [基本准备](prepare/prepares.md)
 	* [选用工具](prepare/tools.md)
