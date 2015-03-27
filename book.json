@@ -1,9 +1,16 @@
 {
-	"language": "cn",
+	"plugins": [
+        "google_code_prettify"
+    ],
     "variables" : {
-		"book_version" : "0.1-dev",
-		"wendal_net" : "http://wendal.net"
-		"wendal_name" : "Wendal Chen <wendal1985@gmail.com>"
-	}
-    "pluginsConfig": {}
+		"book_version":"0.1-dev",
+		"wendal_net":"http://wendal.net",
+		"wendal_name":"Wendal Chen <wendal1985@gmail.com>"
+	},
+    "pluginsConfig": {
+        "duoshuo":{
+            "short_name":"nutzbook",
+            "theme": "default"
+        }
+    }
 }

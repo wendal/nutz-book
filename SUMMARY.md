@@ -41,7 +41,6 @@
 	* [页面中转方法](do_curd/do_forward.md)
 	* [UserModule全貌](do_curd/do_class.md)
 	* [列表页](do_curd/list_jsp.md)
-	* [新增用户页](do_curd/add_user_jsp.md)
 * [完善一下基本配置](more_configure/more_configure.md)
 	* [关联源码](more_configure/source_code.md)
 	* [添加log4j配置](more_configure/log4j.md)
