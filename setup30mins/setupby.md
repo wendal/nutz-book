@@ -39,3 +39,7 @@ public class MainSetup implements Setup {
 ## 完成后的MainModule类
 
 ![](images/setupby_2.png)
+
+## 手册关联(选修)
+
+* [SetupBy_-_应用启动以及关闭时的额外处理](http://nutzam.com/core/mvc/modules.html#@SetupBy_-_应用启动以及关闭时的额外处理)

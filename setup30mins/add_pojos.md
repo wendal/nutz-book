@@ -120,3 +120,6 @@ public class User {
 
 ```
 
+## 手册关联(选修)
+
+* [注解列表](http://nutzam.com/core/dao/annotations.html)

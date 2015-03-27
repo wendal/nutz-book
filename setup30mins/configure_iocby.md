@@ -35,3 +35,7 @@ public class MainModule {
 * `*js` 是JsonIocLoader,负责加载js/json结尾的ioc配置文件
 * `*anno` 是AnnotationIocLoader,负责处理注解式Ioc, 例如@IocBean
 * `*tx` 是TransIocLoader,负责加载内置的事务拦截器定义, 1.b.52开始自带
+
+## 手册关联(选修)
+
+* [同Ioc容器一起工作](http://nutzam.com/core/mvc/with_ioc.html)

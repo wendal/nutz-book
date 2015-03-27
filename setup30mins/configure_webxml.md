@@ -47,3 +47,7 @@
   </welcome-file-list>
 </web-app>
 ```
+
+## 手册关联(选修)
+
+* [如何配置 web.xml](http://nutzam.com/core/mvc/web_xml.html)

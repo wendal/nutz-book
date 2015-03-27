@@ -40,3 +40,7 @@ var ioc = {
 ## 完成后的一览图
 
 ![新建dao.json文件](images/add_daojson_3.png)
+
+## 手册关联(选修)
+
+[如何创建 DataSource](http://nutzam.com/core/appendix/create_datasource.html)

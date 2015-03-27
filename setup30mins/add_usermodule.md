@@ -93,3 +93,8 @@ Search mapping for path=/user/count : NOT Action match
 ```
 
  找不到方法, 一般是@At写错或者UserModule的package写错,导致映射不到或者根本没找到这个类
+
+
+## 手册关联(选修)
+
+* [主模块-子模块-入口函数](http://nutzam.com/core/mvc/modules.html)

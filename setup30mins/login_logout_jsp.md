@@ -1,8 +1,8 @@
 # 登入登出的页面
 
-## 为了省事,我们直接建个index.jsp
+## 为了省事,我们直接建个index.jsp,把内容放进去
 
-下面就是内容了,自行CV了, 文件建在WebContent下面就好了,暂时不考虑放在WEB-INF下
+下面就是内容了,自行复制粘贴了, 文件建在WebContent下面就好了. 留意一下,这里是引用新浪cdn的jquery,如果无法访问,自行换成其他可用地址吧.
 
 ```
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -66,3 +66,7 @@
 </body>
 </html>
 ```
+
+## 手册关联(选修)
+
+无

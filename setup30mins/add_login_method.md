@@ -24,3 +24,10 @@ http://127.0.0.1:8080/nutzbook/user/login?name=admin&password=123456
 ```
 
 正常结果自然就是true了, 如果是false,检查一下MainSetup里面的密码有无写错, 如果报错,就看看具体堆栈的提示吧
+
+## 手册关联(选修)
+
+* [URL 映射](http://nutzam.com/core/mvc/url_mapping.html)
+* [适配器](http://nutzam.com/core/mvc/http_adaptor.html)
+* [视图](http://nutzam.com/core/mvc/view.html)
+* [Dao接口基本操作](http://nutzam.com/core/dao/basic_operations.html)
