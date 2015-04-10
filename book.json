@@ -1,4 +1,5 @@
 {
+	"lang": "zh-cn",
 	"plugins": [
         "google_code_prettify"
     ],

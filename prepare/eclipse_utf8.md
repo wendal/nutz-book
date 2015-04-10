@@ -8,7 +8,9 @@
 
 在末尾加入一句
 
-    -Dfile.encoding=UTF-8
+```
+-Dfile.encoding=UTF-8
+```
 
 ### 效果如下
 
