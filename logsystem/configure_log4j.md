@@ -6,7 +6,7 @@
 
 ## 在conf目录中,新建一个文件,名为 log4j.properties 内容是
 
-```
+```ini
 log4j.rootLogger=debug,Console
 
 log4j.appender.Console=org.apache.log4j.ConsoleAppender

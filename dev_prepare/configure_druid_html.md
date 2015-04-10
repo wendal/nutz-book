@@ -2,7 +2,7 @@
 
 ## 打开dao.js, 为DruidDataSource加入监控选项, 分别是filters和connectionProperties
 
-```
+```js
 	        fields : {
 	            url : {java:"$conf.get('db.url')"},
 	            username : {java:"$conf.get('db.username')"},
@@ -19,7 +19,7 @@
 
 ## 打开web.xml, 在nutz的filter之前, 加入Web监控的配置
 
-```
+```xml
 	<filter>
 		<filter-name>DruidWebStatFilter</filter-name>
 		<filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>

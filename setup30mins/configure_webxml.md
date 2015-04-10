@@ -4,7 +4,7 @@
 
 在display-name节点和welcome-file-list节点之间,添加以下内容
 
-```
+```xml
   <filter>
   	<filter-name>nutz</filter-name>
   	<filter-class>org.nutz.mvc.NutFilter</filter-class>
@@ -21,7 +21,7 @@
 
 ## 完成后完整的web.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>nutzbook</display-name>

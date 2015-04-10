@@ -7,7 +7,7 @@
 
 ## 在conf目录下,新建一个文件叫quartz.properties,内容如下
 
-```
+```java
 org.quartz.scheduler.instanceName = NutzbookScheduler 
 org.quartz.threadPool.threadCount = 3 
 org.quartz.jobStore.class = org.quartz.simpl.RAMJobStore
@@ -16,7 +16,7 @@ org.quartz.scheduler.skipUpdateCheck=true
 
 ## 新建一个类, 包为net.wendal.nutzbook.quartz, 名称为NutQuartzJobFactory, 内容如下
 
-```
+```java
 package net.wendal.nutzbook.quartz;
 
 import org.nutz.ioc.Ioc;
@@ -58,7 +58,7 @@ public class NutQuartzJobFactory implements JobFactory {
 
 ## 打开MainSetup类,在创建用户之后,加入一行代码
 
-```
+```java
 		// 获取quartz的Scheduler,这样就自动触发了计划任务的启动
 		ioc.get(Scheduler.class);
 ```
@@ -67,7 +67,7 @@ public class NutQuartzJobFactory implements JobFactory {
 
 ## 在conf/ioc目录下,创建一个文件quartz.js 内容如下
 
-```
+```js
 var ioc = {
 		scheduler : {
 			type : "org.quartz.Scheduler",

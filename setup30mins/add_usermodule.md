@@ -8,7 +8,7 @@
 
 完成的后的代码如下
 
-```
+```java
 package net.wendal.nutzbook.module;
 
 import org.nutz.dao.Dao;
@@ -33,7 +33,7 @@ public class UserModule {
 
 整个类贴给你了
 
-```
+```java
 package net.wendal.nutzbook.module;
 
 import net.wendal.nutzbook.bean.User;

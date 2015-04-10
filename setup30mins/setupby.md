@@ -6,7 +6,7 @@
 
 ## MainSetup需要实现Setup接口,并在其中初始化数据库表
 
-```
+```java
 package net.wendal.nutzbook;
 
 import org.nutz.dao.Dao;
@@ -32,7 +32,7 @@ public class MainSetup implements Setup {
 
 ## 打开MainModule类, 配置@SetupBy, 引用刚刚创建的MainSetup
 
-```
+```java
 @SetupBy(value=MainSetup.class)
 ```
 

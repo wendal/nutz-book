@@ -13,7 +13,7 @@
 
 ## 将下述内容填入dao.js文件
 
-```
+```js
 var ioc = {
 	    dataSource : {
 	        type : "com.alibaba.druid.pool.DruidDataSource",

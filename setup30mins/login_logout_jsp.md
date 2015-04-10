@@ -4,7 +4,7 @@
 
 下面就是内容了,自行复制粘贴了, 文件建在WebContent下面就好了. 留意一下,这里是引用新浪cdn的jquery,如果无法访问,自行换成其他可用地址吧.
 
-```
+```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">

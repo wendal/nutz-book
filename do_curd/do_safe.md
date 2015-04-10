@@ -6,7 +6,7 @@
 
 UserModule添加一个注解
 
-```
+```java
 @Filters(@By(type=CheckSession.class, args={"me", "/"}))
 ```
 
@@ -15,7 +15,7 @@ UserModule添加一个注解
 同时,为login方法设置为空的过滤器,不然就没法登陆了
 
 
-```
+```java
 @Filters()
 ```
 
@@ -24,6 +24,6 @@ UserModule添加一个注解
 
 将UserModule的@Ok注解改成
 
-```
+```java
 @Ok("json:{locked:'password|salt',ignoreNull:true}")
 ```

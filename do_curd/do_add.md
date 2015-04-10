@@ -2,7 +2,7 @@
 
 ## 假设客户端通过表单把新建用户的属性都发送过来了, 那么在UserModule中就建一个add方法如下
 
-```
+```java
 	@At
 	public Object add(@Param("..")User user) {
 		NutMap re = new NutMap();

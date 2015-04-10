@@ -2,7 +2,7 @@
 
 整个类贴出来,带注释的哦
 
-```
+```java
 package net.wendal.nutzbook.module;
 
 import java.util.Date;

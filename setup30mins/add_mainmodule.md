@@ -8,8 +8,9 @@
 
 添加一行代码
 
+```java
 	@Modules(scanPackage=true)
-
+```
 并按下Ctrl+Shift+O,自动导入.
 
 ![模块类自动扫描](images/add_mainmodule_modules.png)

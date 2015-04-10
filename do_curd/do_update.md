@@ -2,7 +2,7 @@
 
 需要更新的内容也发送过来, 其实就2个,password和salt,而且salt是根本没用上
 
-```
+```java
 	@At
 	public Object update(@Param("..")User user) {
 		NutMap re = new NutMap();

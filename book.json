@@ -1,7 +1,7 @@
 {
+	"gitbook": ">=2.0.0",
 	"lang": "zh-cn",
 	"plugins": [
-        "google_code_prettify"
     ],
     "variables" : {
 		"book_version":"0.1-dev",

@@ -2,7 +2,7 @@
 
 ## 根据名字查就可以了,也没其他可以查询的信息了吧,当然加上分页咯
 
-```
+```java
 	@At
 	public Object query(@Param("name")String name, @Param("..")Pager pager) {
 		Cnd cnd = Strings.isBlank(name)? null : Cnd.where("name", "like", "%"+name+"%");

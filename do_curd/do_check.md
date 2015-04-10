@@ -2,7 +2,7 @@
 
 当前没有引入校验相关的jar或辅助类,那我们就手工建一个帮助方法吧
 
-```
+```java
 	protected String checkUser(User user, boolean create) {
 		if (user == null) {
 			return "空对象";

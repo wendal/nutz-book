@@ -2,7 +2,7 @@
 
 ## 在UserModule新增一个logout方法
 
-```
+```java
 	@At
 	@Ok(">>:/")
 	public void logout(HttpSession session) {

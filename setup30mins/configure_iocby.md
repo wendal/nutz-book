@@ -3,7 +3,7 @@
 ## 打开MainModule类, 添加IocBy配置,如下
 
 
-```
+```java
 @IocBy(type=ComboIocProvider.class, args={"*js", "ioc/",
 										   "*anno", "net.wendal.nutzbook",
 										   "*tx"})
@@ -13,7 +13,7 @@
 
 ## 完成后的MainModule
 
-```
+```java
 package net.wendal.nutzbook;
 
 import org.nutz.mvc.annotation.IocBy;

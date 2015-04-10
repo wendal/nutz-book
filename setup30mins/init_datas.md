@@ -2,7 +2,7 @@
 
 ## 打开MainSetup类,在Daos语句后面插入新建根用户的代码
 
-```
+```java
 		// 初始化默认根用户
 		if (dao.count(User.class) == 0) {
 			User user = new User();
@@ -16,7 +16,7 @@
 
 ## 完成后的整个MainSetup类
 
-```
+```java
 package net.wendal.nutzbook;
 
 import java.util.Date;

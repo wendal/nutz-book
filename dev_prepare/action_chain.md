@@ -4,7 +4,7 @@
 
 ## 在conf文件夹中,新建一个文件夹mvc,新增一个配置文件叫nutzbook-mvc-chain.js, 内容如下
 
-```
+```js
 var chain={
 	"default" : {
 		"ps" : [
@@ -26,7 +26,7 @@ var chain={
 
 ## 所以,新建一个类叫LogTimeProcessor, 包自然就是net.wendal.nutzbook.mvc咯, 继承org.nutz.mvc.impl.processor.AbstractProcessor
 
-```
+```java
 package net.wendal.nutzbook.mvc;
 
 import javax.servlet.http.HttpServletRequest;
@@ -64,7 +64,7 @@ public class LogTimeProcessor extends AbstractProcessor {
 
 ## 然后打开MainModule这个类,加入一个注解
 
-```
+```java
 @ChainBy(args="mvc/nutzbook-mvc-chain.js")
 ```
 

@@ -12,7 +12,7 @@
 
 ## 在db.properties中填入如下内容,即当前可配置的数据库信息
 
-```
+```ini
 db.url=jdbc:mysql://127.0.0.1:3306/nutzbook
 db.username=root
 db.password=root
@@ -23,7 +23,7 @@ db.maxActive=100
 
 ## 打开dao.js, 将其改造一下
 
-```
+```js
 var ioc = {
 		conf : {
 			type : "org.nutz.ioc.impl.PropertiesProxy",

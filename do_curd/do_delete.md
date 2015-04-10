@@ -2,7 +2,7 @@
 
 最直接的方法,通过id删除用户
 
-```
+```java
 	@At
 	public Object delete(@Param("id")int id, @Attr("me")int me) {
 		if (me == id) {

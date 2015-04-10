@@ -8,7 +8,7 @@
 
 ## 整个类的代码如下
 
-```
+```java
 package net.wendal.nutzbook.mvc;
 
 import java.io.IOException;
@@ -56,7 +56,7 @@ public class NutzBookNutFilter extends NutFilter {
 
 ### 然后,打开web.xml, 将其中的org.nutz.mvc.NutFilter改成net.wendal.nutzbook.mvc.NutzBookNutFilter
 
-```
+```xml
 	<filter>
 		<filter-name>nutz</filter-name>
 		<filter-class>net.wendal.nutzbook.mvc.NutzBookNutFilter</filter-class>

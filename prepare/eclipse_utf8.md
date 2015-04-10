@@ -8,7 +8,7 @@
 
 在末尾加入一句
 
-```
+```ini
 -Dfile.encoding=UTF-8
 ```
 

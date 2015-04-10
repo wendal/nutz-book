@@ -6,7 +6,7 @@
 
 ## 为User类添加几个属性
 
-```
+```java
 package net.wendal.nutzbook.bean;
 
 import java.util.Date;
@@ -25,7 +25,7 @@ public class User {
 
 ## 标注Nutz所需的注解Table,Id,Name
 
-```
+```java
 @Table("t_user")
 public class User {
 
@@ -53,7 +53,7 @@ public class User {
 
 ## 最终效果的User.java 完整代码
 
-```
+```java
 package net.wendal.nutzbook.bean;
 
 import java.util.Date;

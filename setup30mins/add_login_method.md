@@ -2,7 +2,7 @@
 
 ## 在UserModule类加入一个方法
 
-```
+```java
 	@At
 	public Object login(@Param("name")String name, @Param("password")String password, HttpSession session) {
 		User user = dao.fetch(User.class, Cnd.where("name", "=", name).and("password", "=", password));

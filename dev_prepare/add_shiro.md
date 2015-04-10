@@ -9,7 +9,7 @@
 
 ## 在conf目录下,建一个文件叫shiro.ini, 右键--open with--Text Editor, 内容如下
 
-```
+```ini
 [main]
 
 [urls]
@@ -17,7 +17,7 @@
 ```
 ## 打开web.xml, 加入以下配置在其他filter之前哦
 
-```
+```xml
 	<listener>
 		<listener-class>org.apache.shiro.web.env.EnvironmentLoaderListener</listener-class>
 	</listener>
