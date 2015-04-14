@@ -86,8 +86,10 @@
 	* [添加验证邮件的返回方法](user_mail/callback_method.md)
 	* [改造profile.jsp](user_mail/modify_profile.md)
 	* [页面测试](user_mail/mail_test.md)
+* [定期清理未激活用户](user_clean/user_clean.md)
+	* [添加cron任务加载类](user_clean/cron_loader.md)
+	* [添加任务类](user_clean/clean_job.md)
+	* [在MainSetup中触发](user_clean/mainsetup.md)
+	* [检查效果](user_clean/test_cron.md)
 * 后面的未完成
-* [定期清理未激活用户]
-	* [添加corn任务加载类]
-	* [添加任务类]
-	* [在MainSetup中触发]
+* [登陆验证码]
