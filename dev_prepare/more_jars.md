@@ -23,7 +23,7 @@
 
 ## Slf4j
 
-* Shiro依赖这个,so, 下载之
+* Shiro依赖这个,下载之
 * 官网下载 http://slf4j.org/download.html
 
 ## commons-beanutils
@@ -31,5 +31,16 @@
 * 也是shiro依赖的,怒而下载之
 * 官网下载 http://commons.apache.org/proper/commons-beanutils/download_beanutils.cgi
 
+## JSTL 1.2
 
+* JSP(tm) Standard Tag Library implementations
+* 下载地址 http://tomcat.apache.org/download-taglibs.cgi
+* 4个jar全下载.
 
+## Apache Common Mail
+
+* 下载地址 http://commons.apache.org/proper/commons-email/download_email.cgi
+
+## Java Mail
+
+* 下载地址 https://java.net/projects/javamail/pages/Home

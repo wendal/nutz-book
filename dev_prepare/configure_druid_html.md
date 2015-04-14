@@ -34,6 +34,19 @@
 	</filter-mapping>
 ```
 
+## 在welcome-file之前,再加入
+
+```
+	<servlet>
+		<servlet-name>DruidStatView</servlet-name>
+		<servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DruidStatView</servlet-name>
+		<url-pattern>/druid/*</url-pattern>
+	</servlet-mapping>
+```
+
 ### 本章结尾会提供当前项目的压缩包,如果不明白就下载压缩包看看吧
 
 ## 启动tomcat,先尝试登陆登出一次,然后访问如下地址观察效果

@@ -20,6 +20,8 @@
 ## 在WebContent/WEB-INF/jsp/下新建一个文件,叫500.jsp, 内容如下
 
 ```jsp
+<%@page import="org.nutz.lang.Strings"%>
+<%@page import="java.util.Enumeration"%>
 <%@page import="java.io.ByteArrayOutputStream"%>
 <%@page import="java.io.PrintWriter"%>
 <%@page import="org.nutz.mvc.Mvcs"%>
@@ -36,8 +38,17 @@
 <body>
 <div>
 <%
-	Object obj = request.getAttribute("obj");
-	if (obj != null) {
+	Throwable e = exception;
+	if (e == null) {
+		Object obj = request.getAttribute("obj");
+		if (obj != null && obj instanceof Throwable) {
+			e = (Throwable)obj;
+		} else {
+			if (Mvcs.getActionContext() != null) {
+				e = Mvcs.getActionContext().getError();
+			}
+		}
+	}
 %>
 	<h2>请求的路径: <%=(request.getAttribute("javax.servlet.forward.request_uri") + (request.getQueryString() == null ? "" : "?" + request.getQueryString())) %></h2><p/>
 	<%
@@ -46,6 +57,7 @@
 	<h2>请求的方法: <%=Mvcs.getActionContext().getMethod() %></h2><p/>
 	<%
 		}
+	if (e != null) {
 	%>
 	
 	<h2>异常堆栈如下:</h2><p/>
@@ -55,10 +67,10 @@
 			ByteArrayOutputStream bao = new ByteArrayOutputStream();
 			PrintWriter pw = new PrintWriter(bao);
 			
-			((Throwable)obj).printStackTrace(pw);
+			e.printStackTrace(pw);
 			pw.flush();
 %>
-<%=new String(bao.toByteArray()) %>
+<%=Strings.escapeHtml(new String(bao.toByteArray())) %>
 		</code>
 	</pre>
 <%	
