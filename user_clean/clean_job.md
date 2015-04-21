@@ -2,7 +2,7 @@
 
 ## 清理用户需要清理2个表,新建类net.wendal.nutzbook.quartz.job.CleanNonActiveUserJob
 
-```
+```java
 package net.wendal.nutzbook.quartz.job;
 
 import java.util.Date;
@@ -51,7 +51,7 @@ public class CleanNonActiveUserJob implements Job {
 ### 关键点
 
 * 先清除id>10且创建时间大于1天的邮箱未激活或者没填邮箱的用户, 请注意Cnd.exps的用法,构建多条件语句必备
-* 第二段是自定义sql,这里并没有用到参数(转为?号),只用到变量(直接替入)
+* 第二段是自定义sql,这里用到参数(转为?号),也用到变量(直接替入)
 * 这里并没有太明显的会抛出异常的情况,所以不必加上事务了.
 * 良好的日志是基本素养哦
 * 是java.util.Date啊啊啊啊

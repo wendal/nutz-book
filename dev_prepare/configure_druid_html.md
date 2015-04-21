@@ -62,3 +62,5 @@ http://127.0.0.1:8080/nutzbook/druid/webapp.html
 ```
 http://127.0.0.1:8080/nutzbook/druid/sql.html
 ```
+
+![Druid监控页面初探](images/druid_monitor.png)

@@ -6,6 +6,7 @@
 * slf4j-api-1.7.12.jar
 * slf4j-log4j12-1.7.12.jar
 * commons-beanutils-1.9.2.jar
+* commons-logging-1.2.jar
 
 ## 在conf目录下,建一个文件叫shiro.ini, 右键--open with--Text Editor, 内容如下
 

@@ -17,7 +17,7 @@ cron.CleanNonActiveUserJob=0 0/2 * * * ?
 
 ## 再建一个 net.wendal.nutzbook.quartz.NutQuartzCronJobFactory, 这个类的作用是读取cron.properties里面的配置,然后启动相应的计划任务
 
-```
+```java
 package net.wendal.nutzbook.quartz;
 
 import org.nutz.ioc.impl.PropertiesProxy;

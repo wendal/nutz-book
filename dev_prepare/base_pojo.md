@@ -21,7 +21,7 @@ public abstract class BasePojo {
 	protected Date updateTime;
 	
 	public String toString() {
-		return String.format("/*%s*/%s", super.toString(), Json.toJson(JsonFormat.compact()));
+		return String.format("/*%s*/%s", super.toString(), Json.toJson(this, JsonFormat.compact()));
 	}
 
 	public Date getCreateTime() {

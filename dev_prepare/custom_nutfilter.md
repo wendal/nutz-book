@@ -67,10 +67,4 @@ public class NutzBookNutFilter extends NutFilter {
 	</filter>
 ```
 
-## 启动tomcat, 访问如下地址, 应该druid的监控页面就会出来,然后后台无nutz的log输出
-
-```
-http://127.0.0.1:8080/nutzbook/druid/index.html
-```
-
-![Druid监控页面初探](images/druid_monitor.png)
+## 启动tomcat, 应无异常.

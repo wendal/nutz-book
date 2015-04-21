@@ -1,9 +1,9 @@
 # 新增Toolkit类
 
-## 新增一个类,名为net.wendal.base.util.Toolkit, 内容如下, 取自老的nutzwx项目
+## 新增一个类,名为net.wendal.nutzbook.util.Toolkit, 内容如下, 取自老的nutzwx项目
 
-```
-package net.wendal.base.util;
+```java
+package net.wendal.nutzbook.util;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

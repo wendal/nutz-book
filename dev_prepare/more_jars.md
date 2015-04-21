@@ -31,6 +31,11 @@
 * 也是shiro依赖的,怒而下载之
 * 官网下载 http://commons.apache.org/proper/commons-beanutils/download_beanutils.cgi
 
+## commons-logging
+
+* 也是shiro依赖的,怒而下载之
+* 官网下载 http://commons.apache.org/proper/commons-logging/download_logging.cgi
+
 ## JSTL 1.2
 
 * JSP(tm) Standard Tag Library implementations
@@ -44,3 +49,8 @@
 ## Java Mail
 
 * 下载地址 https://java.net/projects/javamail/pages/Home
+
+## Simplecaptcha
+
+* 简单够用的验证码生产库
+* 下载地址 https://repo1.maven.org/maven2/cn/apiclub/tool/simplecaptcha/1.2.2/simplecaptcha-1.2.2.jar
