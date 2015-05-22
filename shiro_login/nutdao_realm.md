@@ -128,5 +128,5 @@ public class NutDaoRealm extends AuthorizingRealm {
 
 ### 关键点
 
-* 这个类也存在于shiro插件中,但切勿直接引用, 因为这个类与实际的权限模型(User-Role-Permission)紧密相关,提供一个通用的实现不现实.
+* 这个类也存在于shiro插件中,但切勿直接引用, 因为这个类与实际的权限模型(User-Role-Permission)紧密相关,提供一个通用实现不现实.
 * 类中的Ioc注解仅供参考,在本书中没有实际意义. 因为shiro先于NutFilter初始化,所以ioc容器没法直接提供支持.

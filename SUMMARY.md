@@ -8,6 +8,8 @@
 	* [这本书怎么用](introduction/howtouse.md)
 	* [如何反馈](introduction/howtofeedback.md)
 	* [提问的智慧](introduction/askforhelp.md)
+	* [关于Maven和MyEclipse的说明](introduction/maven_myeclipse.md)
+	* [更新日志](introduction/changelog.md)
 * [基本准备](prepare/prepares.md)
 	* [选用工具](prepare/tools.md)
 	* [让Eclipse工作在UTF8环境](prepare/eclipse_utf8.md)
@@ -104,11 +106,9 @@
 	* [新增UserService](prepare_shiro/user_service.md)
 	* [修改MainSetup](prepare_shiro/modify_mainsetup.md)
 	* [修改UserModule](prepare_shiro/modify_usermodule.md)
-	* [修改登陆页面](prepare_shiro/modify_login_page.md)
 	* [重建数据库](prepare_shiro/rebuild_database.md)
 	* [页面测试](prepare_shiro/page_test.md)
 * [用Shiro做登陆](shiro_login/shiro_login.md)
-	* [添加插件](shiro_login/shiro_plugin.md)
 	* [添加NutDaoRealm](shiro_login/nutdao_realm.md)
 	* [修改shiro.ini](shiro_login/shiro_ini.md)
 	* [复制登陆页面](shiro_login/login_jsp.md)
@@ -119,4 +119,37 @@
 	* [修改UserModule类](shiro_method/user_module.md)
 	* [页面测试](shiro_method/page_test.md)
 	* [真实项目的集成步骤](shiro_method/real_project.md)
+* [进一步深入的准备](better_dev/better_dev.md)
+	* [BaseModule类](better_dev/base_module.md)
+	* [添加js库和css库](better_dev/js_css.md)
+* [权限管理的页面及入口方法](authority/authority.md)
+	* [新增AuthorityService及其实现类](authority/add_service.md)
+	* [新增AuthorityModule](authority/add_module.md)
+	* [修改UserModule的Shiro注解](authority/user_module_shiro.md)
+	* [MainSetup中触发AuthorityService](authority/tigger_service.md)
+	* [添加管理页面](authority/page.md)
+	* [启动并观察日志](authority/startup_logs.md)
+* [集成Ehcache及DaoCache](cache_system/cache_system.md)
+	* [添加相关的Jar](cache_system/add_jars.md)
+	* [添加ehcache.xml](cache_system/add_ehcache_xml.md)
+	* [配置shiro.ini](cache_system/shiro.md)
+	* [添加ehcache.js](cache_system/add_ehcache_js.md)
+	* [MainSetup关联](cache_system/main_setup.md)
+	* [修改BaseModule](cache_system/base_module.md)
+	* [改造dao.js](cache_system/dao_js.md)
+	* [启动Tomcat观察日志](cache_system/startup_logs.md)
 * 后面的未完成
+
+
+
+
+
+
+
+
+
+
+
+
+
+

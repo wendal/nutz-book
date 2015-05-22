@@ -30,9 +30,9 @@ public class User extends BasePojo {
 	protected String salt;
 	@Column
 	private boolean locked;
-	@ManyMany(from="uid", relation="t_user_role", target=Role.class, to="role_id")
+	@ManyMany(from="u_id", relation="t_user_role", target=Role.class, to="role_id")
 	protected List<Role> roles;
-	@ManyMany(from="uid", relation="t_user_permission", target=Permission.class, to="permission_id")
+	@ManyMany(from="u_id", relation="t_user_permission", target=Permission.class, to="permission_id")
 	protected List<Permission> permissions;
 	@One(target=UserProfile.class, field="id", key="userId")
 	protected UserProfile profile;

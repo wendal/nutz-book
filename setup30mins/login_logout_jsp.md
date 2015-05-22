@@ -54,7 +54,7 @@
 <body>
 <div id="login_div">
 	<form action="#" id="loginForm" method="post">
-		用户名 <input name="name" type="text" value="admin">
+		用户名 <input name="username" type="text" value="admin">
 		密码 <input name="password" type="password" value="123456">
 		<button id="login_button">提交</button>
 	</form>

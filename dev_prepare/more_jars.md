@@ -44,7 +44,7 @@
 
 ## Apache Common Mail
 
-* 下载地址 http://commons.apache.org/proper/commons-email/download_email.cgi
+* 下载地址 http://repo1.maven.org/maven2/org/apache/commons/commons-email/1.3.3/commons-email-1.3.3.jar
 
 ## Java Mail
 
@@ -54,3 +54,13 @@
 
 * 简单够用的验证码生产库
 * 下载地址 https://repo1.maven.org/maven2/cn/apiclub/tool/simplecaptcha/1.2.2/simplecaptcha-1.2.2.jar
+
+## nutz-integration-quartz
+
+* nutz集成quartz的插件
+* 下载地址 http://repo1.maven.org/maven2/org/nutz/nutz-integration-quartz/1.b.52/nutz-integration-quartz-1.b.52.jar
+
+## nutz-integration-shiro
+
+* nutz集成shiro的插件
+* 下载地址 http://repo1.maven.org/maven2/org/nutz/nutz-integration-shiro/1.b.52/nutz-integration-shiro-1.b.52.jar
