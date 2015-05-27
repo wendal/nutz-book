@@ -11,7 +11,7 @@ public class AuthorityModule extends BaseModule {
 	/**
 	 * 更新用户所属角色/特许权限
 	 */
-	@Post
+	@POST
 	@AdaptBy(type=JsonAdaptor.class)
 	@RequiresPermissions("authority:user:update")
 	@At("/user/update")
