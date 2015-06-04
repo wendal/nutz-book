@@ -4,7 +4,7 @@
 
 ```ini
 # clean non-active user
-cron.CleanNonActiveUserJob=0 0/2 * * * ?
+cron.net.wendal.nutzbook.quartz.job.CleanNonActiveUserJob=0 0/2 * * * ?
 ```
 
 ### 这个文件是定义Job类与cron表达式的关系,格式是

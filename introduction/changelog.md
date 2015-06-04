@@ -1,5 +1,17 @@
 # 更新日志
 
+## 0.3 -- 20150603
+
+* 修正cron.properties中的配置
+
+## 0.3 -- 20150531
+
+* 在web.xml添加nutz的dispatcher配置
+
+## 0.2 -- 20150527
+
+* 新增AuthorityModule 中的@POST注解错写为@Post
+
 ## 0.2 -- 20150424
 
 * 更新Pojo定义,代码兼容Oracle/Mysql/Pgsql

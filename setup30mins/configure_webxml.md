@@ -36,6 +36,9 @@
   <filter-mapping>
   	<filter-name>nutz</filter-name>
   	<url-pattern>/*</url-pattern>
+	<dispatcher>REQUEST</dispatcher>
+	<dispatcher>FORWARD</dispatcher>
+	<dispatcher>INCLUDE</dispatcher>
   </filter-mapping>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
