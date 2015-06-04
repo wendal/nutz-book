@@ -2,7 +2,7 @@
 
 ## 添加以下Jar文件到WebContent/WEB-INF/lib
 
-* javax.mail.jar
+* javax.mail-1.5.2.jar
 * commons-email-1.3.3.jar
 
 ### 前面的是java mail的实现,后者是apache common mail

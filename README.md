@@ -2,7 +2,7 @@
 
 ## 有别于Nutz官方手册的指南,以向导式的编排引导用户入门
 
-版本 v0.3-20150603
+版本 v0.3-20150604
 
 
 [本书的文本源码托管在github上](https://github.com/wendal/nutz-book)

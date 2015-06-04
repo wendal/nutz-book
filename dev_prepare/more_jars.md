@@ -48,7 +48,7 @@
 
 ## Java Mail
 
-* 下载地址 https://java.net/projects/javamail/pages/Home
+* 下载地址 http://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar
 
 ## Simplecaptcha
 
