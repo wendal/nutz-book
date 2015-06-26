@@ -10,7 +10,7 @@ cron.net.wendal.nutzbook.quartz.job.CleanNonActiveUserJob=0 0/2 * * * ?
 ### 这个文件是定义Job类与cron表达式的关系,格式是
 
 * 所有属性cron.开头
-* cron.XXX 其中的XXX是类全名或者是简单类名(在加载器中自动补齐package)
+* cron.XXX 其中的XXX是类全名
 * 等号的另外一侧是cron表达式, 从左到右分别是 秒 分 时 日 月 星期 年
 * 这里的cron表达式含义是每2分钟检查一次(按时钟算),是比较频繁,测试ok后将改成1小时一次甚至更久.
 

@@ -1,6 +1,6 @@
 # BaseModule类
 
-为了后续开发的遍历,新增一个net.wendal.nutzbook.module.BaseModule,内容如下
+为了后续开发的便利,新增一个net.wendal.nutzbook.module.BaseModule,内容如下
 
 ```java
 package net.wendal.nutzbook.module;
