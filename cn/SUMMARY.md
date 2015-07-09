@@ -10,6 +10,7 @@
 	* [提问的智慧](introduction/askforhelp.md)
 	* [关于Maven和MyEclipse的说明](introduction/maven_myeclipse.md)
 	* [更新日志](introduction/changelog.md)
+	* [致谢](introduction/thankyou.md)
 * [基本准备](prepare/prepares.md)
 	* [选用工具](prepare/tools.md)
 	* [让Eclipse工作在UTF8环境](prepare/eclipse_utf8.md)
