@@ -1,22 +1,4 @@
 {
-	"gitbook": ">=2.0.0",
-	"lang": "zh-cn",
-	"plugins": ["edit-link","tongji"],
-    "pluginsConfig": {
-            "edit-link": {
-                "base": "https://github.com/wendal/nutz-book/edit/master/",
-                "label": {
-                    "en": "Edit This Page",
-                    "de": "Seite bearbeiten",
-					"zh-cn": "我来改改"
-                }
-            },
-			"tongji": {
-				"token": "edafd43e7bfd59741049a68eaf8748aa"
-			}
-    },
-    "variables" : {
-		"wendal_net":"http://wendal.net",
-		"wendal_name":"Wendal Chen <wendal1985@gmail.com>"
-	}
+  "gitbook": ">=2.0.0",
+  "lang": "zh-cn"
 }
