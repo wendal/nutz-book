@@ -7,4 +7,4 @@
 
 其实, nutz的代码是这样来的:
 
-![五匹兽](images/wps.png)
+![五匹兽](images/wps.jpg)
