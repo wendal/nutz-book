@@ -139,8 +139,18 @@
 	* [修改BaseModule](cache_system/base_module.md)
 	* [改造dao.js](cache_system/dao_js.md)
 	* [启动Tomcat观察日志](cache_system/startup_logs.md)
+* [集成Redis](redis_basic/redis_basic.md)
+	* [添加jedis](redis_basic/add_jars.md)
+	* [启动redis](redis_basic/start_redis.md)
+	* [添加redis.js](redis_basic/redis_js.md)
+	* [在MainSetup中添加测试代码](redis_basic/main_setup.md)
+	* [添加redis拦截器](redis_basic/redis_aop.md)
+	* [添加RedisService](redis_basic/redis_service.md)
+	* [再在MainSetup中添加测试代码](redis_basic/main_setup2.md)
 * 后面的未完成
-
+* [beetl集成]
+* [?socket.io?]
+* [?性能分析?]
 
 
 
