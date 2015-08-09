@@ -1,5 +1,7 @@
 # Nutz-book Nutz烹调向导
 
+[![Join the chat at https://gitter.im/wendal/nutz-book](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wendal/nutz-book?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## 有别于Nutz官方手册的指南,以向导式的编排引导用户入门
 
 版本 v1.1-20150722
