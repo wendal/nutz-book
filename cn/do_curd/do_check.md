@@ -2,7 +2,7 @@
 
 当前没有引入校验相关的jar或辅助类,那我们就手工建一个帮助方法吧
 
-打开UserService,添加一个方法checkUser
+打开UserModule,添加一个方法checkUser
 
 ```java
 	protected String checkUser(User user, boolean create) {

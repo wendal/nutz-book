@@ -9,6 +9,6 @@
 * 完整的Log信息
 * 代码片段
 
-还有一个很常用的网站 [短点](http://nutz.cn) 一个用nutz做的短地址服务
+还有一个很常用的网站 [短点](http://nutz.cn) 一个用nutz做的短地址服务, 用法可以在[百度经验看](http://jingyan.baidu.com/article/5d368d1ef11dd03f60c057b6.html)
 
 将log信息贴到输入框,按下短点,即可生成短地址,这样的地址发到QQ群就不会刷屏了,也带上了语法高亮.
