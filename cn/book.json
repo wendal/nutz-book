@@ -1,7 +1,7 @@
 {
 	"gitbook": ">=2.0.0",
 	"lang": "zh-cn",
-	"plugins": ["tongji"],
+	"plugins": ["sitemap"],
     "pluginsConfig": {
             "edit-link": {
                 "base": "https://github.com/wendal/nutz-book/edit/master/",
@@ -13,6 +13,9 @@
             },
 			"tongji": {
 				"token": "edafd43e7bfd59741049a68eaf8748aa"
+			},
+			"sitemap": {
+				"hostname": "http://nutzbook.wendal.net/"
 			}
     },
     "variables" : {
