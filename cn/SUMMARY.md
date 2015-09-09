@@ -147,9 +147,11 @@
 	* [添加redis拦截器](redis_basic/redis_aop.md)
 	* [添加RedisService](redis_basic/redis_service.md)
 	* [再在MainSetup中添加测试代码](redis_basic/main_setup2.md)
+* [集成模板引擎](templates/templates.md)
+	* [集成jetbrick-template-2x](templates/jetbrick-template-2x.md)
+	* [集成beetl](templates/beetl.md)
+	* [集成freemarker](templates/freemarker.md)
 * 后面的未完成
-* [beetl集成]
-* [?socket.io?]
 * [?性能分析?]
 
 

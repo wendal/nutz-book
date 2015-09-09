@@ -1,5 +1,11 @@
 # 更新日志
 
+## 1.5 -- 20150909
+
+* 集成jetbrick-template模板引擎
+* 集成beetl模板引擎
+* 集成freemarker模板引擎
+
 ## 1.3 -- 20150825
 
 * 添加ISBN
