@@ -38,7 +38,7 @@ public abstract class BaseModule {
 	}
 	
 	protected NutMap ajaxFail(String msg) {
-		return new NutMap().setv("ok", true).setv("msg", msg);
+		return new NutMap().setv("ok", false).setv("msg", msg);
 	}
 }
 ```

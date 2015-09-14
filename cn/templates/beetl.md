@@ -14,6 +14,7 @@
 ## 在conf目录beetl.properties下添加配置文件
 
 ```
+RESOURCE_LOADER=org.beetl.core.resource.WebAppResourceLoader
 #ERROR_HANDLER=net.wendal.nutzbook.beetl.LogErrorHandler
 RESOURCE.root=/WEB-INF/templates/beetl
 ```

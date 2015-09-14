@@ -2,9 +2,11 @@
 
 ## 1.5 -- 20150909
 
-* 集成jetbrick-template模板引擎
-* 集成beetl模板引擎
+* add:集成jetbrick-template模板引擎
+* add: 集成beetl模板引擎
 * 集成freemarker模板引擎
+* fix: BaseModule的ajaxFail写错了
+* fix: 在非中文系统下发出的邮件会乱码的问题
 
 ## 1.3 -- 20150825
 

@@ -150,7 +150,6 @@
 * [集成模板引擎](templates/templates.md)
 	* [集成jetbrick-template-2x](templates/jetbrick-template-2x.md)
 	* [集成beetl](templates/beetl.md)
-	* [集成freemarker](templates/freemarker.md)
 * 后面的未完成
 * [?性能分析?]
 

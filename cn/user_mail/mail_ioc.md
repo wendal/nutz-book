@@ -20,6 +20,7 @@ mail.UserName=nutzbook@wendal.net
 mail.Password=book@2015
 mail.SSLOnConnect=true
 mail.From=nutzbook@wendal.net
+mail.charset=UTF-8
 ```
 
 ### 注意,上述账号只是测试用的,密码随时更改,请使用您自己的QQ邮箱信息及服务器地址
@@ -40,7 +41,8 @@ var ioc={
 			smtpPort : {java:"$conf.get('mail.SmtpPort')"},
 			authenticator : {refer:"emailAuthenticator"},
 			SSLOnConnect : {java:"$conf.get('mail.SSLOnConnect')"},
-			from : {java:"$conf.get('mail.From')"}
+			from : {java:"$conf.get('mail.From')"},
+			charset : {java:"$conf.get('mail.charset', 'UTF-8')"}
 		}
 	}	
 };
@@ -57,7 +59,8 @@ var ioc={
 			email.setSubject("测试NutzBook");
 			email.setMsg("This is a test mail ... :-)" + System.currentTimeMillis());
 			email.addTo("vt400@qq.com");//请务必改成您自己的邮箱啊!!!
-			email.send();
+			email.buildMimeMessage();
+			email.sendMimeMessage();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
