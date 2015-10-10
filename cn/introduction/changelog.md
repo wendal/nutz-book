@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.5 -- 20151011
+
+* fix 11.4修改登陆方法 应该是username,  by[xing-kenny](https://github.com/xing-kenny)
+
 ## 1.5 -- 20150909
 
 * add:集成jetbrick-template模板引擎

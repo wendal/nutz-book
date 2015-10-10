@@ -5,7 +5,7 @@
 ```java
 	@At
 	@Filters // 覆盖UserModule类的@Filter设置,因为登陆可不能要求是个已经登陆的Session
-	public Object login(@Param("name")String name, 
+	public Object login(@Param("username")String name, 
 			@Param("password")String password, 
 			@Param("captcha")String captcha,
 			@Attr(scope=Scope.SESSION, value="nutz_captcha")String _captcha,
