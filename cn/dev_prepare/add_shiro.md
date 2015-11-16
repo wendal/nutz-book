@@ -7,7 +7,7 @@
 * slf4j-log4j12-1.7.12.jar
 * commons-beanutils-1.9.2.jar
 * commons-logging-1.2.jar
-* nutz-integration-shiro-1.b.52.jar
+* nutz-integration-shiro-1.b.53.r2.jar
 
 ## 在conf目录下,建一个文件叫shiro.ini, 右键--open with--Text Editor, 内容如下
 

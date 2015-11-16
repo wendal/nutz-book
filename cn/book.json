@@ -1,6 +1,5 @@
 {
 	"lang": "zh-cn",
-	"plugins": ["sitemap", "tongji"],
     "pluginsConfig": {
 			"tongji": {
 				"token": "edafd43e7bfd59741049a68eaf8748aa"

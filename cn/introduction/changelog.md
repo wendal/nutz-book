@@ -1,8 +1,19 @@
 # 更新日志
 
+## 1.6 -- 20151117
+
+* 更新各依赖库的版本
+
+## 1.5 -- 20151115
+
+* fix: 13.5中不再要求用网卡ip
+* fix: 9.4中补全Toolkit的说明去除
+* fix: 12.7中不单单有User表,修正说法
+* add: 添加 ShiroSessionProvider
+
 ## 1.5 -- 20151011
 
-* fix 11.4修改登陆方法 应该是username,  by[xing-kenny](https://github.com/xing-kenny)
+* fix: 11.4修改登陆方法 应该是username,  by[xing-kenny](https://github.com/xing-kenny)
 
 ## 1.5 -- 20150909
 

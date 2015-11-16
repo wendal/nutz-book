@@ -8,7 +8,7 @@
 protected byte[] emailKEY = R.sg(24).next().getBytes();
 ```
 
-## 打开UserProfileModule类,添加一个方法,哈哈, 这个方法会使用到net.wendal.nutzbook.util.Toolkit类, 如果没有, 就到*为正式开发做准备*一章补上吧.
+## 打开UserProfileModule类,添加一个方法
 
 ```java
 	@At("/active/mail")

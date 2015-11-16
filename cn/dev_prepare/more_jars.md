@@ -24,7 +24,7 @@
 ## Slf4j
 
 * Shiro依赖这个,下载之
-* 官网下载 http://slf4j.org/download.html
+* 官网下载 http://www.slf4j.org/download.html
 
 ## commons-beanutils
 
@@ -58,9 +58,9 @@
 ## nutz-integration-quartz
 
 * nutz集成quartz的插件
-* 下载地址 http://repo1.maven.org/maven2/org/nutz/nutz-integration-quartz/1.b.52/nutz-integration-quartz-1.b.52.jar
+* 下载地址 http://repo1.maven.org/maven2/org/nutz/nutz-integration-quartz/1.b.53.r3/nutz-integration-quartz-1.b.53.r3.jar
 
 ## nutz-integration-shiro
 
 * nutz集成shiro的插件
-* 下载地址 http://repo1.maven.org/maven2/org/nutz/nutz-integration-shiro/1.b.52/nutz-integration-shiro-1.b.52.jar
+* 下载地址 http://repo1.maven.org/maven2/org/nutz/nutz-integration-shiro/1.b.53.r2/nutz-integration-shiro-1.b.53.r2.jar

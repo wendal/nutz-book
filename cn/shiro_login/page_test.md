@@ -23,16 +23,16 @@
 
 ### 请留意其中的sha256Matcher, CaptchaFormAuthenticationFilter资源,确保都是正确的,无异常的.
 
-## 访问新的登陆页面,严重注意,用网卡的ip,而不是127.0.0.1或者localhost!!!!
+## 访问新的登陆页面
 
 ```
-http://192.168.72.102:8080/nutzbook/user/logout
+http://127.0.0.1:8080/nutzbook/user/logout
 ```
 
 ### 应该自动跳到如下地址
 
 ```
-http://192.168.72.102:8080/nutzbook/user/login
+http://127.0.0.1:8080/nutzbook/user/login
 ```
 
 ### 如果出现404或者跳到根路径,检查日志中是否有shiro的输出, 检查shiro.ini的配置
@@ -43,12 +43,12 @@ http://192.168.72.102:8080/nutzbook/user/login
 
 
 ```
-http://192.168.72.102:8080/nutzbook/user/
+http://127.0.0.1:8080/nutzbook/user/
 ```
 
 登出
 
 ```
-http://192.168.72.102:8080/nutzbook/user/login
+http://127.0.0.1:8080/nutzbook/user/login
 ```
 

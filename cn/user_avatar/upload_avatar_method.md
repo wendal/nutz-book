@@ -20,17 +20,9 @@
 			try {
 				BufferedImage image = Images.read(tf.getFile());
 				image = Images.zoomScale(image, 128, 128, Color.WHITE);
-				Images.writeJpeg(image, tf.getFile(), 0.8f);
-				profile.setAvatar(new SimpleBlob(tf.getFile()){
-					public byte[] getBytes(long pos, int length) throws SQLException {
-						if (pos == 1 && length == length())
-							try {
-								return Streams.readBytes(getBinaryStream());
-							} catch (IOException e) {
-							}
-						return super.getBytes(pos, length);
-					}
-				});
+				ByteArrayOutputStream out = new ByteArrayOutputStream();
+				Images.writeJpeg(image, out, 0.8f);
+				profile.setAvatar(out.toByteArray());
 				dao.update(profile, "^avatar$");
 			} catch(DaoException e) {
 				log.info("System Error", e);

@@ -14,5 +14,3 @@
 * 版本果断选最新的
 
 ## 统统放到WebContent/jars下
-
-* 惯例了, 除非哪天把nutzbook改成maven工程

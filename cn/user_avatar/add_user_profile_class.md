@@ -29,7 +29,8 @@ public class UserProfile extends BasePojo {
 	protected boolean emailChecked;
 	/**头像的byte数据*/
 	@Column
-	protected Blob avatar;
+	@JsonField(ignore=true)
+	protected byte[] avatar;
 	/**性别*/
 	@Column
 	protected String gender;

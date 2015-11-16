@@ -12,7 +12,7 @@
 		if (profile == null || profile.getAvatar() == null) {
 			return new File(req.getServletContext().getRealPath("/rs/user_avatar/none.jpg"));
 		}
-		return profile.getAvatar().getBinaryStream();
+		return profile.getAvatar();
 	}
 ```
 

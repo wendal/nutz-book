@@ -8,6 +8,7 @@ redis.host=localhost
 redis.port=6379
 redis.timeout=2000
 #redis.password=wendal.net
+redis.database=0
 
 ```
 
@@ -32,6 +33,7 @@ var ioc = {
 			        {java : "$conf.getInt('redis.port', 6379)"}, 
 			        {java : "$conf.getInt('redis.timeout', 2000)"}, 
 			        {java : "$conf.get('redis.password')"}, 
+			        {java : "$conf.getInt('redis.database', 0)"},
 			        ],
 			fields : {},
 			events : {
