@@ -108,7 +108,7 @@
 	* [修改MainSetup](prepare_shiro/modify_mainsetup.md)
 	* [修改UserModule](prepare_shiro/modify_usermodule.md)
 	* [重建数据库](prepare_shiro/rebuild_database.md)
-	* [修改MainModule](preprare_shiro/modify_mainmodule.md)
+	* [修改MainModule](prepare_shiro/modify_mainmodule.md)
 	* [页面测试](prepare_shiro/page_test.md)
 * [用Shiro做登陆](shiro_login/shiro_login.md)
 	* [添加NutDaoRealm](shiro_login/nutdao_realm.md)
