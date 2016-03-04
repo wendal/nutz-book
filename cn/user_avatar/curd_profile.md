@@ -62,6 +62,8 @@ public class UserProfileModule extends BaseModule {
 			} else if (!profile.getEmail().equals(old.getEmail())) {
 				// 设置新邮箱,果断设置为未检查状态
 				profile.setEmailChecked(false);
+			} else {
+				profile.setEmailChecked(old.isEmailChecked());
 			}
 		}
 		Daos.ext(dao, FieldFilter.create(UserProfile.class, null, "avatar", true)).update(profile);
