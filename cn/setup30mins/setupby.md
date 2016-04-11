@@ -17,6 +17,7 @@ import org.nutz.mvc.Setup;
 
 public class MainSetup implements Setup {
 
+    // 特别留意一下,是init方法,不是destroy方法!!!!!
 	public void init(NutConfig conf) {
 		Ioc ioc = conf.getIoc();
 		Dao dao = ioc.get(Dao.class);
