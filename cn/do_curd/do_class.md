@@ -45,7 +45,7 @@ public class UserModule {
 	
 	@At
 	@Filters // 覆盖UserModule类的@Filter设置,因为登陆可不能要求是个已经登陆的Session
-	public Object login(@Param("name")String name, @Param("password")String password, HttpSession session) {
+	public Object login(@Param("username")String name, @Param("password")String password, HttpSession session) {
 		User user = dao.fetch(User.class, Cnd.where("name", "=", name).and("password", "=", password));
 		if (user == null) {
 			return false;
