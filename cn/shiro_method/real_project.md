@@ -14,7 +14,7 @@
 * @Filters版本的ShiroActionFilter -- 不建议使用,对于单个入口方法效果与NutShiroProcessor类似
 
 
-## 项目打包, 为了方便大家,这次会把整个项目,含所有源码供大家下载.
+## 项目打包, 为了方便大家,这次会把整个项目,含所有源码供大家下载. 属于重制版,仅演示了shiro登录.
 
 [项目打包下载](nutz_shiro_project.zip)
 

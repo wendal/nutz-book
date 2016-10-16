@@ -51,3 +51,11 @@ public class EmailServiceImpl implements EmailService {
 ```
 
 ### 内容很简单,就是取出HtmlEmail然后发送出去.
+
+### 如果是QQ邮箱,请开通smtp服务!!!
+
+http://service.exmail.qq.com/cgi-bin/help?subtype=1&&id=26&&no=308
+
+否则永远发不出去
+
+### 如果还是发不了,请换163或阿里云邮!!

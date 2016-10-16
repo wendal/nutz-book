@@ -114,7 +114,7 @@ PRIMARY KEY (id)
 * 检查dao.js里面的用户名,密码,数据库名称是否正确
 * 确认数据库已经启动
 * 检查IocBy是否写错
-* 检查SetupBy的代码是否抄错
+* 检查SetupBy的代码是否抄错, 通常是init和destroy写反了
 
 ## 完成后,关闭Tomcat
 

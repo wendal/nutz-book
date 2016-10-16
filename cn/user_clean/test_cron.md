@@ -53,7 +53,7 @@ http://127.0.0.1:8080/nutzbook/user/
 
 ### 如果你发现一直没有输出,请打开UserModule的add方法,在insert之前加上
 
-```
+```java
 		user.setCreateTime(new Date());
 		user.setUpdateTime(new Date());
 ```

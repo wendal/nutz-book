@@ -4,9 +4,11 @@
 
 
 ```java
+// 请注意星号!!不要拷贝少了
 @IocBy(type=ComboIocProvider.class, args={"*js", "ioc/",
 										   "*anno", "net.wendal.nutzbook",
-										   "*tx"})
+										   "*tx", // 事务拦截 aop
+										   "*async"}) // 异步执行aop
 ```
 
 记得导入相关的类哦, Ctrl+Shift+O
@@ -22,7 +24,8 @@ import org.nutz.mvc.ioc.provider.ComboIocProvider;
 
 @IocBy(type=ComboIocProvider.class, args={"*js", "ioc/",
 										   "*anno", "net.wendal.nutzbook",
-										   "*tx"})
+										   "*tx", // 事务拦截 aop
+										   "*async"}) // 异步执行aop
 @Modules(scanPackage=true)
 public class MainModule {
 }

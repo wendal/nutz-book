@@ -8,6 +8,9 @@
 
 ## 因为密码加密了,所以登陆方法要改一下
 
+
+请注意一下 SecurityUtils 那一行.
+
 ```java
 	@At
 	@Filters // 覆盖UserModule类的@Filter设置,因为登陆可不能要求是个已经登陆的Session
@@ -26,10 +29,13 @@
 			return re.setv("ok", false).setv("msg", "用户名或密码错误");
 		} else {
 			session.setAttribute("me", userId);
+			// 完成nutdao_realm后启用.
+			// SecurityUtils.getSubject().login(new SimpleShiroToken(userId));
 			return re.setv("ok", true);
 		}
 	}
 ```
+
 
 ### 严重注意一下@Param("username") 待会要修改登陆页面的表单哦
 

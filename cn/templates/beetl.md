@@ -36,7 +36,7 @@ hello,${user.nickname};
 
 ## 新建个BeetlTemplateModule类,加入下述方法
 
-```
+```java
 	@At
 	@Ok("beetl:hello.html")
 	@Fail("void") // beelt的机制导致只能使用void,详细原因看nutzbook中的代码吧
@@ -54,4 +54,4 @@ hello,${user.nickname};
 
 ## 可能出现的问题
 
-* 找不到模板, 需要在beetl.properties中把RESOURCE.root设置为绝对路径
+* 找不到模板, 需要在beetl.properties中把RESOURCE.root设置为绝对路径,貌似新版beetl已经解决这个问题.

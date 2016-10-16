@@ -88,4 +88,16 @@ public class UserProfileModule extends BaseModule {
 	}
 ```
 
-### 留意一下,因为有多个数据库操作,这里加上了事务
+### 留意一下,因为有多个数据库操作,这里加上了事务,这不是必须的.
+
+这里的
+
+```java
+@Aop(TransAop.READ_COMMITTED)
+```
+
+之所以可用,是因为MainModule中的
+
+```
+@IocBy(args={....., "*tx", .....}) // *tx所加载的事务aop
+```

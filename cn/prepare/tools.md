@@ -15,13 +15,13 @@
 ### 数据库 Mysql
 
 * [Mysql官网](http://mysql.org/)
-* [下载页面](http://dev.mysql.com/downloads/), 选用5.6系列的最新版
+* [下载页面](http://dev.mysql.com/downloads/), 选用5.7系列的最新版
 * 妥善安装,并设置密码为root
 
 ### 开发工具 Eclipse 
 
 * [Eclipse官网](http://eclipse.org/)
-* 选用当前最新的4.4.2, [下载地址](http://www.eclipse.org/downloads/), JavaEE版
+* 选用当前最新的4.6.1, [下载地址](http://www.eclipse.org/downloads/), JavaEE版
 * 请根据Jdk版本选用对应的版本, 并解压到nutzbook目录
 * 文件大小约254mb
 

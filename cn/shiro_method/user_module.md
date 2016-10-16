@@ -1,6 +1,12 @@
 # 修改UserModule类
 
-## 打开UserModule,删除login/logout方法
+## 打开UserModule,找到SecurityUtils那一行,去掉注释
+
+```java
+SecurityUtils.getSubject().login(new SimpleShiroToken(userId));
+```
+
+这句login的SimpleShiroToken,将传给SimpleAuthorizingRealm的doGetAuthenticationInfo方法,完成shiro层的登录操作
 
 ## 删除所有@Filters的行
 

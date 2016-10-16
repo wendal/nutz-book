@@ -25,8 +25,8 @@ var ioc = {
 	            url : "jdbc:mysql://127.0.0.1:3306/nutzbook",
 	            username : "root",
 	            password : "root",
-	            testWhileIdle : true,
-	            validationQuery : "select 1" ,
+	            testWhileIdle : true, // 非常重要,预防mysql的8小时timeout问题
+	            validationQuery : "select 1" , // Oracle的话需要改一下
 	            maxActive : 100
 	        }
 	    },

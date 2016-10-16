@@ -2,7 +2,7 @@
 
 ## 打开MainModule, 添加一个注解
 
-```
+```java
 @SessionBy(ShiroSessionProvider.class)
 ```
 

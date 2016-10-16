@@ -12,6 +12,7 @@
 * 下载地址: https://github.com/MSOpenTech/redis/releases
 * 建议用 2.8系列,因为3.x还没完善
 * 解压或安装后启动redis-server即可
+* http://cdn.nutz.cn/Redis-x64-3.2.100.msi
 
 ## 启动截图
 

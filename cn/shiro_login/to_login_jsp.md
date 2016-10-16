@@ -6,7 +6,7 @@
 	@GET
 	@At("/login")
 	@Filters
-	@Ok("jsp:jsp.user.login")
+	@Ok("jsp:jsp.user.login") // 降内部重定向到登录jsp
 	public void loginPage() {}
 ```
 

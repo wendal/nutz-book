@@ -9,7 +9,7 @@
 			}
     },
     "variables" : {
-		"wendal_net":"http://wendal.net",
+		"wendal_net":"https://nutz.cn",
 		"wendal_name":"Wendal Chen <wendal1985@gmail.com>"
 	}
 }

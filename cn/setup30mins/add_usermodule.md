@@ -92,7 +92,7 @@ http://127.0.0.1:8080/nutzbook/user/count
 Search mapping for path=/user/count : NOT Action match
 ```
 
- 找不到方法, 一般是@At写错或者UserModule的package写错,导致映射不到或者根本没找到这个类
+ 找不到方法, 一般是@At写错或者UserModule的package写错,导致映射不到或者根本没找到这个类.在日志中查找线索.
 
 
 ## 手册关联(选修)

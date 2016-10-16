@@ -53,7 +53,7 @@ $loader.reloadable = true
 
 ## 然后新建一个模块叫JetTemplateModule, 用于测试
 
-```
+```java
 package net.wendal.nutzbook.module;
 
 import net.wendal.nutzbook.bean.UserProfile;
