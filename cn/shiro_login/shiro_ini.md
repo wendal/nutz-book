@@ -16,7 +16,6 @@ logout.redirectUrl= /user/login
 /user/error  = anon
 /user/login  = anon
 /user/profile/active/mail = anon
-/user/**     = authc
 ```
 
 ### 看这里看这里
