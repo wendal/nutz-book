@@ -5,7 +5,7 @@ nutz本身并不强制依赖第三方的jar,但项目需要还是会加入下列
 ### Nutz本身
 
 * 不需要废话了
-* [下载地址](http://maven.nutz.cn/nexus/content/repositories/central/org/nutz/nutz/1.r.58/nutz-1.b.58.jar)
+* [下载地址](http://maven.nutz.cn/nexus/content/repositories/central/org/nutz/nutz/1.r.58/nutz-1.r.58.jar)
 
 ### Mysql数据库驱动
 
