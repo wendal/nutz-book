@@ -5,7 +5,7 @@ nutz本身并不强制依赖第三方的jar,但项目需要还是会加入下列
 ### Nutz本身
 
 * 不需要废话了
-* [下载地址](http://maven.nutz.cn/nexus/content/repositories/central/org/nutz/nutz/1.r.58/nutz-1.r.58.jar)
+* [下载地址](http://maven.nutz.cn/nexus/content/repositories/central/org/nutz/nutz/1.r.59/nutz-1.r.59.jar)
 
 ### Mysql数据库驱动
 
@@ -20,7 +20,7 @@ nutz本身并不强制依赖第三方的jar,但项目需要还是会加入下列
 
 ### 关于Log4j
 
-* 如果你执意要加入log4j.jar,那么务必要将其配置log4j.properties.xml配置好, 而且均为debug级别,以免遗漏本书提及的内容.
+* 如果你执意要加入log4j.jar,那么务必要将其配置log4j.properties配置好, 而且均为debug级别,以免遗漏本书提及的内容.
 * 但maven用户,就必须先加入log4j.jar了, 而且把log4j.properties配置好. 下面是推荐配置
 
 ```

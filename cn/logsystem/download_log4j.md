@@ -5,7 +5,7 @@
 ## Nutz源码
 
 * 有些人喜欢关联javadoc,但本书还是建议关联源码
-* [下载地址](http://repo1.maven.org/maven2/org/nutz/nutz/1.b.52/nutz-1.b.52-sources.jar)
+* [下载地址](http://repo1.maven.org/maven2/org/nutz/nutz/1.r.59/nutz-1.r.59-sources.jar)
 
 ## Log4j
 

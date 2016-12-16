@@ -4,7 +4,7 @@
 
 * quartz-2.2.1.jar
 * quartz-jobs-2.2.1.jar
-* nutz-integration-quartz-1.b.53.r3.jar
+* nutz-integration-quartz-1.r.59.jar
 
 ## 在conf目录下,新建一个文件叫quartz.properties,内容如下
 
