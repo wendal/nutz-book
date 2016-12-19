@@ -44,11 +44,11 @@
 
 ## Apache Common Mail
 
-* 下载地址 http://repo1.maven.org/maven2/org/apache/commons/commons-email/1.3.3/commons-email-1.3.3.jar
+* 下载地址 https://jfrog.nutz.cn/artifactory/jcenter/org/apache/commons/commons-email/1.3.3/commons-email-1.3.3.jar
 
 ## Java Mail
 
-* 下载地址 http://repo1.maven.org/maven2/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar
+* 下载地址 https://jfrog.nutz.cn/artifactory/jcenter/com/sun/mail/javax.mail/1.5.2/javax.mail-1.5.2.jar
 
 ## Simplecaptcha
 
@@ -58,9 +58,9 @@
 ## nutz-integration-quartz
 
 * nutz集成quartz的插件
-* 下载地址 http://repo1.maven.org/maven2/org/nutz/nutz-integration-quartz/1.r.59/nutz-integration-quartz-1.r.59.jar
+* 下载地址 https://jfrog.nutz.cn/artifactory/jcenter/org/nutz/nutz-integration-quartz/1.r.59/nutz-integration-quartz-1.r.59.jar
 
 ## nutz-integration-shiro
 
 * nutz集成shiro的插件
-* 下载地址 http://repo1.maven.org/maven2/org/nutz/nutz-integration-shiro/1.r.59/nutz-integration-shiro-1.r.59.jar
+* 下载地址 https://jfrog.nutz.cn/artifactory/jcenter/org/nutz/nutz-integration-shiro/1.r.59/nutz-integration-shiro-1.r.59.jar
