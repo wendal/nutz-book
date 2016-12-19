@@ -17,3 +17,13 @@
 ## 在nutzbook项目中建个文件夹叫sources,把nutz的源码包放进去
 
 ![源码包放置位置](images/download_log4j.png)
+
+## maven配置
+
+```xml
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+```

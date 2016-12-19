@@ -14,3 +14,14 @@
 * 版本果断选最新的
 
 ## 统统放到WebContent/jars下
+
+
+## maven配置
+
+```xml
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.8.1</version>
+		</dependency>
+```

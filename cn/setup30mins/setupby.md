@@ -21,9 +21,10 @@ public class MainSetup implements Setup {
 	public void init(NutConfig conf) {
 		Ioc ioc = conf.getIoc();
 		Dao dao = ioc.get(Dao.class);
+		// 如果没有createTablesInPackage,请检查nutz版本
 		Daos.createTablesInPackage(dao, "net.wendal.nutzbook", false);
 	}
-	
+
 	public void destroy(NutConfig conf) {
 	}
 

@@ -15,3 +15,19 @@ Ehcache 2.x
 * 官网 http://ehcache.org/
 * 下载地址 http://ehcache.org/downloads/catalog
 * 当前最新版本是2.10.0,下载完整版就好了
+
+maven配置
+----------------------------
+
+```xml
+		<dependency>
+			<groupId>org.nutz</groupId>
+			<artifactId>nutz-plugins-daocache</artifactId>
+			<version>1.r.59</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+```

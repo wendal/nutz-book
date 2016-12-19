@@ -26,7 +26,7 @@ public class UserService extends IdNameEntityService<User> {
 		user.setUpdateTime(new Date());
 		return dao().insert(user);
 	}
-	
+
 	public int fetch(String username, String password) {
 		User user = fetch(username);
 		if (user == null) {
@@ -38,7 +38,7 @@ public class UserService extends IdNameEntityService<User> {
 		}
 		return -1;
 	}
-	
+
 	public void updatePassword(int userId, String password) {
 		User user = fetch(userId);
 		if (user == null) {
@@ -53,5 +53,10 @@ public class UserService extends IdNameEntityService<User> {
 
 ```
 
-### 留意一下IocBean中的fields配置,含义是需要注入父类的dao属性
+### 留意一下IocBean中的fields配置
+
+含义是需要注入父类的dao属性
+
 ### 这里用到了sha256加盐算法,将对应shiro.ini中配置
+
+请不要使用明文存储密码.

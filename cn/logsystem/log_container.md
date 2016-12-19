@@ -3,12 +3,12 @@
 ## 把相关的log给揪出来
 
 ```
-2015-03-30 10:49:49,525 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:55) INFO  - Nutz Version : 1.b.52 
+2015-03-30 10:49:49,525 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:55) INFO  - Nutz Version : 1.r.59
 2015-03-30 10:49:49,525 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:56) INFO  - Nutz.Mvc[nutz] is initializing ...
 2015-03-30 10:49:49,525 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:60) DEBUG - Web Container Information:
 2015-03-30 10:49:49,526 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:61) DEBUG -  - Default Charset : UTF-8
 2015-03-30 10:49:49,526 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:62) DEBUG -  - Current . path  : D:\nutzbook\eclipse\.
-2015-03-30 10:49:49,526 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:63) DEBUG -  - Java Version    : 1.8.0_31
+2015-03-30 10:49:49,526 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:63) DEBUG -  - Java Version    : 1.8.0_112
 2015-03-30 10:49:49,526 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:64) DEBUG -  - File separator  : \
 2015-03-30 10:49:49,527 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:65) DEBUG -  - Timezone        : Asia/Shanghai
 2015-03-30 10:49:49,527 org.nutz.mvc.impl.NutLoading.load(NutLoading.java:66) DEBUG -  - OS              : Windows 7 amd64

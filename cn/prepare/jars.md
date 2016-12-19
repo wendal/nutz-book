@@ -23,10 +23,40 @@ nutz本身并不强制依赖第三方的jar,但项目需要还是会加入下列
 * 如果你执意要加入log4j.jar,那么务必要将其配置log4j.properties配置好, 而且均为debug级别,以免遗漏本书提及的内容.
 * 但maven用户,就必须先加入log4j.jar了, 而且把log4j.properties配置好. 下面是推荐配置
 
-```
+```properties
 log4j.rootLogger=debug,Console
 
 log4j.appender.Console=org.apache.log4j.ConsoleAppender
 log4j.appender.Console.layout=org.apache.log4j.PatternLayout
 log4j.appender.Console.layout.ConversionPattern=[%-5p] %d{HH:mm:ss.SSS} %l - %m%n
+```
+
+### maven配置
+
+```xml
+		<dependency>
+			<groupId>org.nutz</groupId>
+			<artifactId>nutz</artifactId>
+			<version>1.r.59</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.25</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jconsole</artifactId>
+					<groupId>com.alibaba</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>tools</artifactId>
+					<groupId>com.alibaba</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.40</version>
+		</dependency>
 ```
