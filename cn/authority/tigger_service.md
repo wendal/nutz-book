@@ -6,7 +6,7 @@
 ```java
 AuthorityService as = ioc.get(AuthorityService.class);
 as.initFormPackage("net.wendal.nutzbook");
-as.checkBasicRoles(admin);
+as.checkBasicRoles(dao.fetch(User.class, "admin"));
 ```
 
 以上代码就能在启动时扫描注解,初始化最基本的权限模型,即:

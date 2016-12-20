@@ -1,5 +1,11 @@
 # 配置Mail相关的ioc文件
 
+## 特别提醒
+
+如果是QQ邮箱发邮件, 且使用JDK8 u60以上,请先阅读以下链接
+
+http://www.xiaotanzhu.com/2016/07/30/use-rc4-in-tencent-mail.html
+
 ## 打开dao.js, 把conf的定义改一下, 使其能扫描到custom下面所有的配置文件
 
 ```json
@@ -44,7 +50,7 @@ var ioc={
 			from : {java:"$conf.get('mail.From')"},
 			charset : {java:"$conf.get('mail.charset', 'UTF-8')"}
 		}
-	}	
+	}
 };
 ```
 
