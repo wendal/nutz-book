@@ -1,5 +1,6 @@
 {
 	"lang": "zh-cn",
+	"plugins": ["prism", "-highlight", "expandable-chapters"],
     "pluginsConfig": {
 			"tongji": {
 				"token": "edafd43e7bfd59741049a68eaf8748aa"
@@ -11,5 +12,8 @@
     "variables" : {
 		"wendal_net":"https://nutz.cn",
 		"wendal_name":"Wendal Chen <wendal1985@gmail.com>"
-	}
+	},
+	"collapsible_menu":true,
+    "level_number":true,
+	"showLevel":true
 }
