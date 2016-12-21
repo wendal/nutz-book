@@ -2,9 +2,7 @@
 
 ## 特别提醒
 
-如果是QQ邮箱发邮件, 且使用JDK8 u60以上,请先阅读以下链接
-
-http://www.xiaotanzhu.com/2016/07/30/use-rc4-in-tencent-mail.html
+严重建议用阿里云邮进行测试,QQ邮箱好多坑
 
 ## 打开dao.js, 把conf的定义改一下, 使其能扫描到custom下面所有的配置文件
 
@@ -20,12 +18,12 @@ http://www.xiaotanzhu.com/2016/07/30/use-rc4-in-tencent-mail.html
 ## 新增一个文件,路径为 conf/custom/mail.properties 内容如下
 
 ```ini
-mail.HostName=smtp.exmail.qq.com
-mail.SmtpPort=465
-mail.UserName=nutzbook@wendal.net
+mail.HostName=smtp.aliyun.com
+mail.SmtpPort=25
+mail.UserName=wendal3@aliyun.com
 mail.Password=book@2015
-mail.SSLOnConnect=true
-mail.From=nutzbook@wendal.net
+mail.SSLOnConnect=false
+mail.From=wendal3@aliyun.com
 mail.charset=UTF-8
 ```
 
@@ -76,6 +74,4 @@ var ioc={
 
 * 抛出端口错误之类的错误: 请使用QQ邮箱等国内地址, 并确保dao.js修改正确
 * 登陆失败,检查一下mail.properties的账号密码,服务器地址等等
-* 发送失败, 别尝试发送给gmail之类的,发自己的QQ邮箱最靠谱
-
-## 删除测试代码!!! 务必删除,否则每次启动都发送一封邮件了, 然后容易被封账号.
+* 发送失败, 别尝试发送给gmail之类的,发自己的邮箱最靠谱
