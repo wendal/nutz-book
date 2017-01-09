@@ -1,6 +1,6 @@
 {
 	"lang": "zh-cn",
-	"plugins": ["prism", "-highlight", "expandable-chapters"],
+	"plugins": ["prism", "-highlight", "expandable-chapters", "theme-comscore"],
     "pluginsConfig": {
 			"tongji": {
 				"token": "edafd43e7bfd59741049a68eaf8748aa"
