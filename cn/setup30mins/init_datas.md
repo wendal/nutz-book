@@ -31,9 +31,9 @@ import org.nutz.mvc.Setup;
 
 public class MainSetup implements Setup {
 
-  // 注意是init方法,不是depose方法
-	public void init(NutConfig conf) {
-		Ioc ioc = conf.getIoc();
+  // 注意是init方法,不是destroy方法
+	public void init(NutConfig nc) {
+		Ioc ioc = nc.getIoc();
 		Dao dao = ioc.get(Dao.class);
 		// 如果提示没有createTablesInPackage方法,请确认用了最新版的nutz,且老版本的nutz已经删除干净
 		Daos.createTablesInPackage(dao, "net.wendal.nutzbook", false);
@@ -49,7 +49,9 @@ public class MainSetup implements Setup {
 		}
 	}
 
-	public void destroy(NutConfig conf) {
+	public void destroy(NutConfig nc) {
+		 // webapp销毁之前执行的逻辑
+		 // 这个时候依然可以从nc取出ioc, 然后取出需要的ioc 对象进行操作
 	}
 
 }

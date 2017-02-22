@@ -12,6 +12,7 @@ var chain={
 		      "org.nutz.mvc.impl.processor.UpdateRequestAttributesProcessor",
 		      "org.nutz.mvc.impl.processor.EncodingProcessor",
 		      "org.nutz.mvc.impl.processor.ModuleProcessor",
+					"!org.nutz.integration.shiro.NutShiroProcessor",
 		      "org.nutz.mvc.impl.processor.ActionFiltersProcessor",
 		      "org.nutz.mvc.impl.processor.AdaptorProcessor",
 		      "org.nutz.mvc.impl.processor.MethodInvokeProcessor",
@@ -38,11 +39,8 @@ import org.nutz.mvc.ActionContext;
 import org.nutz.mvc.impl.processor.AbstractProcessor;
 
 public class LogTimeProcessor extends AbstractProcessor {
-	
-	private static final Log log = Logs.get();
 
-	public LogTimeProcessor() {
-	}
+	private static final Log log = Logs.get();
 
 	@Override
 	public void process(ActionContext ac) throws Throwable {

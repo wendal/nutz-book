@@ -13,6 +13,7 @@
 ```
 并按下Ctrl+Shift+O,自动导入.
 
+
 ![模块类自动扫描](images/add_mainmodule_modules.png)
 
 ## 手册关联(选修)

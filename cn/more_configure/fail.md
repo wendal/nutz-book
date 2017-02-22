@@ -19,7 +19,7 @@
 
 ## 在WebContent/WEB-INF/jsp/下新建一个文件,叫500.jsp, 内容如下
 
-```jsp
+```html
 <%@page import="org.nutz.lang.Strings"%>
 <%@page import="java.util.Enumeration"%>
 <%@page import="java.io.ByteArrayOutputStream"%>
@@ -59,21 +59,21 @@
 		}
 	if (e != null) {
 	%>
-	
+
 	<h2>异常堆栈如下:</h2><p/>
 	<pre>
 		<code class="lang-java">
 <%
 			ByteArrayOutputStream bao = new ByteArrayOutputStream();
 			PrintWriter pw = new PrintWriter(bao);
-			
+
 			e.printStackTrace(pw);
 			pw.flush();
 %>
 <%=Strings.escapeHtml(new String(bao.toByteArray())) %>
 		</code>
 	</pre>
-<%	
+<%
 	}
 %>
 </div>

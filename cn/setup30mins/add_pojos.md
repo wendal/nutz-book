@@ -6,6 +6,8 @@
 
 ## 为User类添加几个属性
 
+稍微提示一下, Nutz不要求用户的Pojo类必须继承某个类
+
 ```java
 package net.wendal.nutzbook.bean;
 
@@ -42,7 +44,7 @@ public class User {
 	private Date createTime;
 	@Column("ut")
 	private Date updateTime;
-	
+
 }
 
 ```
@@ -115,7 +117,7 @@ public class User {
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
-	
+
 }
 
 ```

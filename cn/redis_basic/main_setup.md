@@ -1,10 +1,12 @@
 # 在MainSetup中添加测试代码
 
+下面的代码算是测试redis-jedis-nutz组合的最小测试代码,请不要忽略它们.
+
 ## 打开MainSetup类,添加如下代码
 
 ```java
-		JedisPool jedisPool = ioc.get(JedisPool.class);
-		try (Jedis jedis = jedisPool.getResource()) { // Java7的语法
+		JedisAgent jedisAgent = ioc.get(JedisAgent.class);
+		try (Jedis jedis = jedisAgent.getResource()) { // Java7的语法
 			String re = jedis.set("_nutzbook_test_key", "http://nutzbook.wendal.net");
 			log.debug("redis say : " + re);
 			re = jedis.get("_nutzbook_test_key");
@@ -21,14 +23,14 @@
 2015-08-07 04:23:51,325 org.nutz.ioc.loader.combo.ComboIocLoader.load(ComboIocLoader.java:144) DEBUG - Found IocObject(jedisPool) in IocLoader(JsonLoader@1709213544)
 2015-08-07 04:23:51,325 org.nutz.ioc.impl.NutIoc.get(NutIoc.java:193) DEBUG - 	 >> Make...'jedisPool'<class redis.clients.jedis.JedisPool>
 2015-08-07 04:23:51,333 org.nutz.ioc.aop.impl.DefaultMirrorFactory.getMirror(DefaultMirrorFactory.java:83) DEBUG - class redis.clients.jedis.JedisPool , no config to enable AOP for this type.
-2015-08-07 04:23:51,333 org.nutz.ioc.impl.ScopeContext.save(ScopeContext.java:59) DEBUG - Save object 'jedisPool' to [app] 
+2015-08-07 04:23:51,333 org.nutz.ioc.impl.ScopeContext.save(ScopeContext.java:59) DEBUG - Save object 'jedisPool' to [app]
 2015-08-07 04:23:51,333 org.nutz.ioc.impl.NutIoc.get(NutIoc.java:143) DEBUG - Get 'jedisPoolConfig'<>
 2015-08-07 04:23:51,334 org.nutz.ioc.impl.NutIoc.get(NutIoc.java:163) DEBUG - 	 >> Load definition
 2015-08-07 04:23:51,334 org.nutz.ioc.loader.map.MapLoader.load(MapLoader.java:67) DEBUG - Loading define for name=jedisPoolConfig
 2015-08-07 04:23:51,334 org.nutz.ioc.loader.combo.ComboIocLoader.load(ComboIocLoader.java:144) DEBUG - Found IocObject(jedisPoolConfig) in IocLoader(JsonLoader@1709213544)
 2015-08-07 04:23:51,334 org.nutz.ioc.impl.NutIoc.get(NutIoc.java:193) DEBUG - 	 >> Make...'jedisPoolConfig'<>
 2015-08-07 04:23:51,335 org.nutz.ioc.aop.impl.DefaultMirrorFactory.getMirror(DefaultMirrorFactory.java:83) DEBUG - class redis.clients.jedis.JedisPoolConfig , no config to enable AOP for this type.
-2015-08-07 04:23:51,335 org.nutz.ioc.impl.ScopeContext.save(ScopeContext.java:59) DEBUG - Save object 'jedisPoolConfig' to [app] 
+2015-08-07 04:23:51,335 org.nutz.ioc.impl.ScopeContext.save(ScopeContext.java:59) DEBUG - Save object 'jedisPoolConfig' to [app]
 2015-08-07 04:23:51,335 org.nutz.ioc.impl.NutIoc.get(NutIoc.java:143) DEBUG - Get 'conf'<>
 2015-08-07 04:23:51,335 org.nutz.ioc.impl.NutIoc.get(NutIoc.java:143) DEBUG - Get 'conf'<>
 2015-08-07 04:23:51,335 org.nutz.ioc.impl.NutIoc.get(NutIoc.java:143) DEBUG - Get 'conf'<>
@@ -46,5 +48,4 @@
 
 ## 可能遇到的问题
 
-* redis.js写错,导致ioc加载失败
 * redis没启动导致读写失败

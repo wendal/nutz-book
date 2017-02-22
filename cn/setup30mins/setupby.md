@@ -18,14 +18,14 @@ import org.nutz.mvc.Setup;
 public class MainSetup implements Setup {
 
     // 特别留意一下,是init方法,不是destroy方法!!!!!
-	public void init(NutConfig conf) {
-		Ioc ioc = conf.getIoc();
+	public void init(NutConfig nc) {
+		Ioc ioc = nc.getIoc();
 		Dao dao = ioc.get(Dao.class);
 		// 如果没有createTablesInPackage,请检查nutz版本
 		Daos.createTablesInPackage(dao, "net.wendal.nutzbook", false);
 	}
 
-	public void destroy(NutConfig conf) {
+	public void destroy(NutConfig nc) {
 	}
 
 }

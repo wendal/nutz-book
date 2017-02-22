@@ -58,9 +58,9 @@
 ## nutz-integration-quartz
 
 * nutz集成quartz的插件
-* 下载地址 https://jfrog.nutz.cn/artifactory/jcenter/org/nutz/nutz-integration-quartz/1.r.59/nutz-integration-quartz-1.r.59.jar
+* 下载地址 https://jfrog.nutz.cn/artifactory/jcenter/org/nutz/nutz-integration-quartz/1.r.60.r2/nutz-integration-quartz-1.r.60.r2.jar
 
 ## nutz-integration-shiro
 
 * nutz集成shiro的插件
-* 下载地址 https://jfrog.nutz.cn/artifactory/jcenter/org/nutz/nutz-integration-shiro/1.r.59/nutz-integration-shiro-1.r.59.jar
+* 下载地址 https://jfrog.nutz.cn/artifactory/jcenter/org/nutz/nutz-integration-shiro/1.r.60.r2/nutz-integration-shiro-1.r.60.r2.jar

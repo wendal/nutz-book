@@ -13,13 +13,40 @@
 ## 在db.properties中填入如下内容,即当前可配置的数据库信息
 
 ```ini
+#mysql
 db.url=jdbc:mysql://127.0.0.1:3306/nutzbook
 db.username=root
 db.password=root
-db.validationQuery=select 1
+#db.validationQuery=select 1
 db.maxActive=100
+db.testWhileIdle=true
+db.filters=mergeStat
+db.connectionProperties=druid.stat.slowSqlMillis=2000
+#db.defaultAutoCommit=true
 
+#oracle
+#db.url=jdbc:oracle:thin:@//192.168.72.101:1521/xe
+#db.username=system
+#db.password=oracle
+#db.validationQuery=select 1 from dual
+#db.maxActive=100
+
+#postgresql
+#db.url=jdbc:postgresql://127.0.0.1:5432/nutzbook
+#db.username=postgres
+#db.password=root
+#db.validationQuery=select 1
+#db.maxActive=100
 ```
+
+### druid参数简介
+
+* filters是druid定义的一些过滤器,其中mergeStat是带合并的sql状态过滤
+* connectionProperties配置中的2000代表如果sql执行超过2秒,就输出日志
+
+提醒一下, Druid的SQL解析器遇到无法解析的SQL会报错,但不影响运行,若感觉不适,建议向druid提issue
+
+或者将mergeStat改成stat也可以,只是统计SQL耗时的时候比较分散.
 
 ## 打开dao.js, 将其改造一下
 
@@ -28,28 +55,22 @@ var ioc = {
 		conf : {
 			type : "org.nutz.ioc.impl.PropertiesProxy",
 			fields : {
-				paths : ["custom/db.properties"]
+				paths : ["custom/"]
 			}
 		},
-	    dataSource : {
-	        type : "com.alibaba.druid.pool.DruidDataSource",
-	        events : {
-	        	create : "init",
-	            depose : 'close'
-	        },
-	        fields : {
-	            url : {java:"$conf.get('db.url')"},
-	            username : {java:"$conf.get('db.username')"},
-	            password : {java:"$conf.get('db.password')"},
-	            testWhileIdle : true,
-	            validationQuery : {java:"$conf.get('db.validationQuery')"},
-	            maxActive : {java:"$conf.get('db.maxActive')"}
-	        }
-	    },
-	    dao : {
-	    	type : "org.nutz.dao.impl.NutDao",
+		dataSource : {
+				factory : "$conf#make",
+				args : ["com.alibaba.druid.pool.DruidDataSource", "db."],
+				type : "com.alibaba.druid.pool.DruidDataSource",
+				events : {
+					create : "init",
+						depose : 'close'
+				}
+		},
+	  dao : {
+	      type : "org.nutz.dao.impl.NutDao",
 	    	args : [{refer:"dataSource"}]
-	    }
+	  }
 };
 ```
 

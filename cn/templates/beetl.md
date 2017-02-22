@@ -7,7 +7,7 @@
 
 ## 在MainModule声明@Views,引入BeetlViewMaker
 
-```
+```java
 @Views({BeetlViewMaker.class})
 ```
 

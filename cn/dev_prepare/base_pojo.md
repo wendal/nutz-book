@@ -4,7 +4,7 @@
 
 ## 类名为BasePojo, package自然是net.wendal.nutzbook.bean, Bean的内容如下
 
-```
+```java
 package net.wendal.nutzbook.bean;
 
 import java.util.Date;
@@ -14,14 +14,15 @@ import org.nutz.json.Json;
 import org.nutz.json.JsonFormat;
 
 public abstract class BasePojo {
-	
+
 	@Column("ct")
 	protected Date createTime;
 	@Column("ut")
 	protected Date updateTime;
-	
+
 	public String toString() {
-		return String.format("/*%s*/%s", super.toString(), Json.toJson(this, JsonFormat.compact()));
+		// 这不是必须的, 只是为了debug的时候方便看
+		return Json.toJson(this, JsonFormat.compact()));
 	}
 
 	public Date getCreateTime() {
@@ -68,7 +69,7 @@ public class User extends BasePojo {
 	private String password;
 	@Column
 	private String salt;
-	
+
 	public int getId() {
 		return id;
 	}
@@ -93,6 +94,6 @@ public class User extends BasePojo {
 	public void setSalt(String salt) {
 		this.salt = salt;
 	}
-	
+
 }
 ```

@@ -6,3 +6,5 @@
 * taglibs-standard-impl-1.2.5.jar
 * taglibs-standard-spec-1.2.5.jar
 * taglibs-standard-jstlel-1.2.5.jar
+
+如果是maven或者比较新的tomcat, 这已经可以无视

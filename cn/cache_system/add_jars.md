@@ -5,7 +5,7 @@
 ----------------------------
 
 * DaoCache并不在Nutz核心包内,而是作为一个插件提供
-* 地址 http://repo1.maven.org/maven2/org/nutz/nutz-plugins-daocache/
+* 地址 https://jfrog.nutz.cn/artifactory/jcenter/org/nutz/nutz-plugins-daocache/
 * 项目地址 https://github.com/nutzam/nutzmore/tree/master/nutz-plugins-daocache
 * 该插件还在不停完善中,请下载最新版本
 

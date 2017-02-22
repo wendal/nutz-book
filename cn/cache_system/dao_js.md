@@ -5,14 +5,14 @@
 
 ```json
 		dao : {
-			type : "org.nutz.dao.impl.NutDaoExt", // 1.b.53或以上版本使用原版NutDao.
+			type : "org.nutz.dao.impl.NutDao", 
 			args : [{refer:"dataSource"}],
 			fields : {
-				executor : {refer:"cacheExecutor"}
+				interceptors : [{refer:"cacheExecutor"}, "log"]
 			}
 		},
 		cacheExecutor : {
-			type : "org.nutz.plugins.cache.dao.CachedNutDaoExecutor",
+			type : "org.nutz.plugins.cache.dao.DaoCacheInterceptor",
 			fields : {
 				cacheProvider : {refer:"cacheProvider"},
                 // 需要缓存的表名

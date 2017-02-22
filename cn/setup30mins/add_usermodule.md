@@ -16,16 +16,16 @@ import org.nutz.ioc.loader.annotation.Inject;
 import org.nutz.ioc.loader.annotation.IocBean;
 import org.nutz.mvc.annotation.At;
 
-@IocBean
+@IocBean // 还记得@IocBy吗? 这个跟@IocBy有很大的关系哦
 @At("/user")
 @Ok("json")
 @Fail("http:500")
 public class UserModule {
 
 	@Inject
-	protected Dao dao;
-	
-	
+	protected Dao dao; // 就这么注入了,有@IocBean它才会生效
+
+
 }
 ```
 
@@ -53,15 +53,13 @@ public class UserModule {
 
 	@Inject
 	protected Dao dao;
-	
+
 	@At
 	public int count() {
 		return dao.count(User.class);
 	}
-	
+
 }
-
-
 ```
 
 ## 启动Tomcat,验证一下
@@ -81,9 +79,9 @@ http://127.0.0.1:8080/nutzbook/user/count
 2015-3-20 14:16:2.238 DEBUG [http-nio-8080-exec-2] Found IocObject(userModule) in IocLoader(AnnotationIocLoader@406224233)
 2015-3-20 14:16:2.238 DEBUG [http-nio-8080-exec-2] 	 >> Make...'userModule'<class net.wendal.nutzbook.module.UserModule>
 2015-3-20 14:16:2.238 DEBUG [http-nio-8080-exec-2] class net.wendal.nutzbook.module.UserModule , no config to enable AOP for this type.
-2015-3-20 14:16:2.239 DEBUG [http-nio-8080-exec-2] Save object 'userModule' to [app] 
+2015-3-20 14:16:2.239 DEBUG [http-nio-8080-exec-2] Save object 'userModule' to [app]
 2015-3-20 14:16:2.239 DEBUG [http-nio-8080-exec-2] Get 'dao'<>
-2015-3-20 14:16:2.240 DEBUG [http-nio-8080-exec-2] SELECT COUNT(*) FROM t_user 
+2015-3-20 14:16:2.240 DEBUG [http-nio-8080-exec-2] SELECT COUNT(*) FROM t_user
 ```
 
 ## 可能出现的问题:

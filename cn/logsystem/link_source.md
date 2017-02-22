@@ -7,7 +7,7 @@
 ## 在弹窗口中,选择或直接填入
 
 ```
-	/nutzbook/sources/nutz-1.b.59-sources.jar
+	/nutzbook/sources/nutz-1.r.60-sources.jar
 ```
 
 ![弹出窗口的截图](images/link_source_2.png)

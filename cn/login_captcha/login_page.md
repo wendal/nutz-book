@@ -8,10 +8,10 @@
 
 ### 的后面加入
 
-```jsp
+```html
 		<script type="text/javascript">
 			function next_captcha() {
-				$("#captcha_img").attr("src", "${base}/captcha/next?_=" + new Date().getTime()); 
+				$("#captcha_img").attr("src", "${base}/captcha/next?_=" + new Date().getTime());
 			}
 		</script>
 		验证码<input name="captcha" type="text" value="">
@@ -32,7 +32,7 @@
 				}
 ```
 
-### 改成 
+### 改成
 
 ```js
 				success: function(data) {

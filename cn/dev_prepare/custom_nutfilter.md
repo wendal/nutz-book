@@ -1,70 +1,22 @@
-# 自定义NutFilter
+# 配置NutFilter需要忽略的路径
 
-### 这一小节,我们需要继承一下NutFilter,加点小判断
+我们需要实现的功能是: /druid或/rs下的路径,就无条件跳过NutFilter
 
-## 新建一个类, 叫NutzBookNutFilter,包名是net.wendal.nutzbook.mvc,超类是org.nutz.mvc.NutFilter
-
-![新建一个类叫NutzBookNutFilter](images/new_nutzbook_nutzfilter.png)
-
-## 整个类的代码如下
-
-```java
-package net.wendal.nutzbook.mvc;
-
-import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
-
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
-
-import org.nutz.mvc.NutFilter;
-
-public class NutzBookNutFilter extends NutFilter {
-	
-	protected Set<String> prefixs = new HashSet<String>();
-	
-	
-	public void init(FilterConfig conf) throws ServletException {
-		super.init(conf);
-		prefixs.add(conf.getServletContext().getContextPath() + "/druid/");
-		prefixs.add(conf.getServletContext().getContextPath() + "/rs/");
-	}
-
-	@Override
-	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
-		if (req instanceof HttpServletRequest) {
-			String uri = ((HttpServletRequest) req).getRequestURI();
-			for (String prefix : prefixs) {
-				if (uri.startsWith(prefix)) {
-					chain.doFilter(req, resp);
-					return;
-				}
-			}
-		}
-		super.doFilter(req, resp, chain);
-	}
-}
-
-```
-
-### 含义是, 如果访问/druid或/rs下的路径,就无条件跳过NutFilter
-
-### 然后,打开web.xml, 将其中的org.nutz.mvc.NutFilter改成net.wendal.nutzbook.mvc.NutzBookNutFilter
+### 打开web.xml,配置exclusions
 
 ```xml
-	<filter>
-		<filter-name>nutz</filter-name>
-		<filter-class>net.wendal.nutzbook.mvc.NutzBookNutFilter</filter-class>
-		<init-param>
-			<param-name>modules</param-name>
-			<param-value>net.wendal.nutzbook.MainModule</param-value>
-		</init-param>
-	</filter>
+<filter>
+	<filter-name>nutz</filter-name>
+	<filter-class>org.nutz.mvc.NutFilter</filter-class>
+	<init-param>
+		<param-name>modules</param-name>
+		<param-value>net.wendal.nutzbook.MainModule</param-value>
+	</init-param>
+	<init-param>
+		<param-name>exclusions</param-name>
+		<param-value>/rs/*,/druid/*</param-value>
+	</init-param>
+</filter>
 ```
 
 ## 启动tomcat, 应无异常.

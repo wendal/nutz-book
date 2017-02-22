@@ -141,29 +141,11 @@
 	* [改造dao.js](cache_system/dao_js.md)
 	* [启动Tomcat观察日志](cache_system/startup_logs.md)
 * [集成Redis](redis_basic/redis_basic.md)
-	* [添加jedis](redis_basic/add_jars.md)
-	* [启动redis](redis_basic/start_redis.md)
-	* [添加redis.js](redis_basic/redis_js.md)
+* [启动redis](redis_basic/start_redis.md)
+	* [添加相关的jar](redis_basic/add_jars.md)
+	* [添加redis.js](redis_basic/redis_iocby.md)
 	* [在MainSetup中添加测试代码](redis_basic/main_setup.md)
-	* [添加redis拦截器](redis_basic/redis_aop.md)
-	* [添加RedisService](redis_basic/redis_service.md)
-	* [再在MainSetup中添加测试代码](redis_basic/main_setup2.md)
+	* [再在MainSetup中添加测试代码](redis_basic/main_aop.md)
 * [集成模板引擎](templates/templates.md)
 	* [集成jetbrick-template-2x](templates/jetbrick-template-2x.md)
 	* [集成beetl](templates/beetl.md)
-* 后面的未完成
-* [?性能分析?]
-* [?Zbus?]
-* [?工作流?]
-
-
-
-
-
-
-
-
-
-
-
-

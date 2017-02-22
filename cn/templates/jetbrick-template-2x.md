@@ -8,7 +8,7 @@
 
 通过maven下载集成jar
 
-```
+```xml
 <dependency>
     <groupId>com.github.subchen</groupId>
     <artifactId>jetbrick-template-nutz</artifactId>
@@ -18,7 +18,7 @@
 
 ## 开始集成, 先在conf目录下创建配置文件jetbrick-template.properties
 
-```
+```ini
 jetx.template.loaders = $loader
 
 $loader = jetbrick.template.loader.ServletResourceLoader
@@ -26,7 +26,7 @@ $loader.root = /WEB-INF/templates/jetx
 $loader.reloadable = true
 ```
 
-## 打开MainModule类, 添加一个注解,即可关联jetbrick-template. 
+## 打开MainModule类, 添加一个注解,即可关联jetbrick-template.
 
 ```
 @Views({JetTemplateViewMaker.class})
@@ -34,7 +34,7 @@ $loader.reloadable = true
 
 ## 然后我们新建一个模板 /WebContent/WEB-INF/templates/jetx/hello.jetx, 内容如下
 
-```
+```xml
 <table>
   <tr>
     <td>序号</td>

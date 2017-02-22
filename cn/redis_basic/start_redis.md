@@ -1,5 +1,7 @@
 # 启动redis
 
+要使用redis,首先得安装和启动它, 如果你已经有redis在运行,无视下面的描述吧...
+
 ## linux下
 
 * 下载: http://download.redis.io/releases/redis-3.2.0.tar.gz

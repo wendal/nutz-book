@@ -4,7 +4,8 @@
 ----
 
 ```java
-	@Inject protected CacheManager cacheManager;
+	@Inject
+	protected CacheManager cacheManager;
 ```
 
 一如既往地走默认注入规则: 与属性同名的bean

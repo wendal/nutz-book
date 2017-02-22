@@ -5,5 +5,5 @@
 在MainSetup.init方法内, Daos.createTableInPackage之后添加:
 
 ```java
-Daos.migration(dao, User.class, true, false);
+Daos.migration(dao, User.class, true, false, false);
 ```

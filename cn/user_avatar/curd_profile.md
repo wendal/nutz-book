@@ -98,6 +98,6 @@ public class UserProfileModule extends BaseModule {
 
 之所以可用,是因为MainModule中的
 
-```
+```java
 @IocBy(args={....., "*tx", .....}) // *tx所加载的事务aop
 ```

@@ -8,7 +8,7 @@
 
 加入
 
-```jsp
+```html
 				<c:if test="${!obj.emailChecked}">
 					<script type="text/javascript">
 						function send_email_check() {

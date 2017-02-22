@@ -1,45 +1,68 @@
-# 添加redis拦截器
+# 如何使用jedis/redis的aop拦截器
 
-## 因为JedisPool需要try-finally,所以我们做点改造,用aop的方式演示一种使用方式
+## 未封装的jedis操作比较繁琐
 
-新建一个类, net.wendal.nutzbook.util.RedisInterceptor
+如果你用过jedis, 应该见过这样的写法
 
 ```java
-package net.wendal.nutzbook.util;
+Jedis jedis = null;
+try {
+   jedis = jedisPool.getResource();
+	 ....
+	 ....
+} finally {
+   if (jedis != null)
+	     jedis.close();
+}
+```
 
-import org.nutz.aop.InterceptorChain;
-import org.nutz.aop.MethodInterceptor;
-import org.nutz.ioc.loader.annotation.Inject;
-import org.nutz.ioc.loader.annotation.IocBean;
+## nutz提供的aop封装
 
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
+基于@Aop("redis")实现jedis资源的自动开启与关闭
 
-@IocBean(name="redis")
-public class RedisInterceptor implements MethodInterceptor {
+```java
+import static org.nutz.integration.jedis.RedisInterceptor.jedis;
 
-	@Inject JedisPool jedisPool;
-	
-	static ThreadLocal<Jedis> TL = new ThreadLocal<Jedis>();
-	
-	public void filter(InterceptorChain chain) throws Throwable {
-		if (TL.get() != null) {
-			chain.doChain();
-			return;
-		}
-		try (Jedis jedis = jedisPool.getResource()) {
-			TL.set(jedis);
-			chain.doChain();
-		} finally{
-			TL.remove();
-		}
-	}
+@IocBean
+public class UserServiceImpl {
 
-	public static Jedis jedis() {
-		return TL.get();
+  @Aop("redis")
+	public User addUser(User user) {
+		  dao.insert(user);
+      jedis().incr("user:count");
+			return user;
 	}
 }
 
 ```
 
-### 这个类的工作方式很简单,就是进入方法之前,取jedis放入ThreadLocal,这样在被拦截的方法内就能通过静态方法 jedis()获取实例,且不需要关心Jedis实例的关闭问题(被拦截的方法执行完毕的时候释放)
+是不是很清爽呢?
+
+## 如果我希望直接操作JedisPool呢?
+
+推荐使用JedisPool的等价类JedisAgent, 两者的区别如下:
+
+* JedisPool通常是单机或主从,若将来需要切换到JedisCluster(redis 3集群模式), 需要修改所有相关代码
+* JedisCluster操作的是redis 3.x集群, API与Jedis不完全兼容,而且不共享超类.
+* JedisAgent,与JedisPool类似的API, 根据配置信息(通常指redis.properties),可无缝切换到集群模式
+* JedisPool与JedisAgent均通过getResource()方法获取Jedis对象.
+* JedisAgent已经预先封装了JedisCluster,无论是单机还是集群,均返回统一的Jedis对象
+* 考虑到将来集群的情况, 建议避免使用pipeline/事务/lua.
+
+```java
+import static org.nutz.integration.jedis.RedisInterceptor.jedis;
+
+@IocBean
+public class UserServiceImpl {
+
+	@Inject JedisAgent jedisAgent; // 同理,可以是JedisPool和JedisCluster
+
+	public User addUser(User user) {
+		  dao.insert(user);
+		  try (Jedis jedis = jedisAgent.getResource()){
+          jedis().incr("user:count");
+			}
+			return user;
+	}
+}
+```

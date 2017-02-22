@@ -3,14 +3,13 @@
 ## 把下列的jar放入WebContent/WEB-INF/lib下
 
 * quartz-2.2.1.jar
-* quartz-jobs-2.2.1.jar
-* nutz-integration-quartz-1.r.59.jar
+* nutz-integration-quartz-1.r.60.r2.jar
 
 ## 在conf目录下,新建一个文件叫quartz.properties,内容如下
 
 ```java
-org.quartz.scheduler.instanceName = NutzbookScheduler 
-org.quartz.threadPool.threadCount = 3 
+org.quartz.scheduler.instanceName = NutzbookScheduler
+org.quartz.threadPool.threadCount = 3
 org.quartz.jobStore.class = org.quartz.simpl.RAMJobStore
 org.quartz.scheduler.skipUpdateCheck=true
 ```
@@ -18,10 +17,11 @@ org.quartz.scheduler.skipUpdateCheck=true
 ## 打开MainModule,修改IocBy为
 
 ```java
-@IocBy(type=ComboIocProvider.class, args={"*js", "ioc/",
+@IocBy(type=ComboIocProvider.class, args={
+	                     "*js", "ioc/",
 										   "*anno", "net.wendal.nutzbook",
 										   "*tx",
-										   "*org.nutz.integration.quartz.QuartzIocLoader"})
+										   "*quartz"})
 ```
 
 ### 即添加了 org.nutz.integration.quartz.QuartzIocLoader 这个预定义的集成配置
@@ -56,7 +56,7 @@ org.quartz.scheduler.skipUpdateCheck=true
 2015-04-24 23:07:34,709 org.nutz.ioc.loader.combo.ComboIocLoader.load(ComboIocLoader.java:137) DEBUG - Found IocObject(jobFactory) in IocLoader(QuartzIocLoader@1177174666)
 2015-04-24 23:07:34,709 org.nutz.ioc.impl.NutIoc.get(NutIoc.java:193) DEBUG - 	 >> Make...'jobFactory'<>
 2015-04-24 23:07:34,710 org.nutz.ioc.aop.impl.DefaultMirrorFactory.getMirror(DefaultMirrorFactory.java:82) DEBUG - class org.nutz.integration.quartz.NutQuartzJobFactory , no config to enable AOP for this type.
-2015-04-24 23:07:34,710 org.nutz.ioc.impl.ScopeContext.save(ScopeContext.java:59) DEBUG - Save object 'jobFactory' to [app] 
+2015-04-24 23:07:34,710 org.nutz.ioc.impl.ScopeContext.save(ScopeContext.java:59) DEBUG - Save object 'jobFactory' to [app]
 2015-04-24 23:07:34,711 org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:2311) INFO  - JobFactory set to: org.nutz.integration.quartz.NutQuartzJobFactory@48de4231
 2015-04-24 23:07:34,711 org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:575) INFO  - Scheduler NutzbookScheduler_$_NON_CLUSTERED started.
 ```

@@ -1,5 +1,7 @@
 # 新增Toolkit类
 
+补充一个小小的工具类
+
 ## 新增一个类,名为net.wendal.nutzbook.util.Toolkit, 内容如下, 取自老的nutzwx项目
 
 ```java
@@ -22,7 +24,7 @@ import org.nutz.log.Logs;
 public class Toolkit {
 
 	public static final Log log = Logs.get();
-	
+
 	public static String captcha_attr = "nutz_captcha";
 
 	public static boolean checkCaptcha(String expected, String actual) {
@@ -30,15 +32,15 @@ public class Toolkit {
 			return false;
 		return actual.equalsIgnoreCase(expected);
 	}
-	
+
 	public static String passwordEncode(String password, String slat) {
 		String str = slat + password + slat + password.substring(4);
 		return Lang.digest("SHA-512", str);
 	}
-	
+
 	private static final String Iv = "\0\0\0\0\0\0\0\0";
 	private static final String Transformation = "DESede/CBC/PKCS5Padding";
-	
+
 	public static String _3DES_encode(byte[] key, byte[] data) {
 		SecretKey deskey = new SecretKeySpec(key, "DESede");
 		IvParameterSpec iv = new IvParameterSpec(Iv.getBytes());
@@ -53,7 +55,7 @@ public class Toolkit {
 		}
 		return null;
 	}
-	
+
 	public static String _3DES_decode(byte[] key, byte[] data) {
 		SecretKey deskey = new SecretKeySpec(key, "DESede");
 		IvParameterSpec iv = new IvParameterSpec(Iv.getBytes());
@@ -67,7 +69,7 @@ public class Toolkit {
 		}
 		return null;
 	}
-	
+
 	public static NutMap kv2map(String kv) {
 		NutMap re = new NutMap();
 		if (kv == null || kv.length() == 0 || !kv.contains("="))
@@ -81,7 +83,7 @@ public class Toolkit {
 		}
 		return re;
 	}
-	
+
 	public static String randomPasswd(User usr) {
 		String passwd = R.sg(10).next();
 		String slat = R.sg(48).next();
@@ -89,7 +91,7 @@ public class Toolkit {
 		usr.setPassword(passwordEncode(passwd, slat));
 		return passwd;
 	}
-	
+
 	public static byte[] hexstr2bytearray(String str) {
 		byte[] re = new byte[str.length() / 2];
 		for (int i = 0; i < re.length; i++) {

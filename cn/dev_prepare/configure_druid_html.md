@@ -1,21 +1,6 @@
 # 配置druid监控
 
-## 打开dao.js, 为DruidDataSource加入监控选项, 分别是filters和connectionProperties
-
-```js
-	        fields : {
-	            url : {java:"$conf.get('db.url')"},
-	            username : {java:"$conf.get('db.username')"},
-	            password : {java:"$conf.get('db.password')"},
-	            testWhileIdle : true,
-	            validationQuery : {java:"$conf.get('db.validationQuery')"},
-	            maxActive : {java:"$conf.get('db.maxActive')"},
-	            filters : "mergeStat",
-	            connectionProperties : "druid.stat.slowSqlMillis=2000"
-	        }
-```
-
-### filters是druid定义的一些过滤器,mergeStat是带合并的sql状态过滤器, 而connectionProperties配置中的2000代表如果sql执行超过2秒,就输出日志
+druid 提供了一个web端的监控页面, 搭建起来不算麻烦, 建议添加.
 
 ## 打开web.xml, 在nutz的filter之前, 加入Web监控的配置
 
@@ -36,7 +21,7 @@
 
 ## 在welcome-file之前,再加入
 
-```
+```xml
 	<servlet>
 		<servlet-name>DruidStatView</servlet-name>
 		<servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>

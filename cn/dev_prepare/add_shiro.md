@@ -2,12 +2,12 @@
 
 ## 首先,下面罗列的jar 放入 WebContent/WEB-INF/lib中
 
-* shiro-all-1.2.3.jar
+* shiro-all-1.3.2.jar
 * slf4j-api-1.7.12.jar
 * slf4j-log4j12-1.7.12.jar
 * commons-beanutils-1.9.2.jar
 * commons-logging-1.2.jar
-* nutz-integration-shiro-1.r.59.jar
+* nutz-integration-shiro-1.r.60.r2.jar
 
 ## 在conf目录下,建一个文件叫shiro.ini, 右键--open with--Text Editor, 内容如下
 
@@ -56,6 +56,6 @@
 2015-04-09 20:03:45,903 org.apache.shiro.web.env.EnvironmentLoader.initEnvironment(EnvironmentLoader.java:141) INFO  - Shiro environment initialized in 80 ms.
 ```
 
-## 注意,这里只是完成了一个独立配置(而且是允许一切的配置),还没与nutz进行深入集成.
+## 注意,这里只是完成了一个独立配置,还没与nutz进行深入集成.
 
 ### 后面会有章节独立说明与nutz集成的操作(需要建立相应的权限表和对应的pojo)
