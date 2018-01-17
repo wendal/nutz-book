@@ -17,7 +17,7 @@
     <id>nutzcn</id>
     <mirrorOf>central</mirrorOf>
     <name>super mavem mirror for nutz users</name>
-    <url>https://jfrog.nutz.cn/artifactory/jcenter</url>
+    <url>http://jfrog.nutz.cn/artifactory/libs-release</url>
   </mirror>
 </mirrors>
 ```
