@@ -24,11 +24,11 @@
 
 书中的目录结构,并非maven, 对应关系如下:
 
-|书中的目录名称|maven中的目录名称 |
-|-------------|-----------------|
-|src          |src/main/java    |
-|conf         |src/main/resource|
-|WebContent   |src/main/webapp  |
+|书中的目录名称|maven中的目录名称  |
+|-------------|------------------|
+|src          |src/main/java     |
+|conf         |src/main/resources|
+|WebContent   |src/main/webapp   |
 
 常用nutz镜像库及快照版地址
 
